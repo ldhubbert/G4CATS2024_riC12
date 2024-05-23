@@ -208,4 +208,6 @@ void B4cEventAction::EndOfEventAction(const G4Event* event)
   analysisManager->AddNtupleRow();  
 }  
 
+// Adding a pointless comment here
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
