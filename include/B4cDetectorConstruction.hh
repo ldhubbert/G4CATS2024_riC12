@@ -55,7 +55,11 @@ class G4GlobalMagFieldMessenger;
 class B4cDetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
+    //constructor. it is a special member function of a class that gets called when an object of that class is created.
+    //i.e., "B4cDetectorConstruction detector" creates an object of class B4cDetectorConstruction named "detector".
     B4cDetectorConstruction();
+    
+    //virtual destructor. it gets called when objects are destroyed.
     virtual ~B4cDetectorConstruction();
 
   public:
