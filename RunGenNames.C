@@ -48,6 +48,7 @@ void RunGenNames()
 	UInt_t npart = 2;
 	UInt_t ptag[2] = {67, 1};
 
+	//Specifies that the return of the method "GenNames" is a TString named "names"
 	TString names = GenNames(npart, ptag);
 
 	cout << "Generated Names: " << names << endl;
