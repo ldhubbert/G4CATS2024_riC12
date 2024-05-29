@@ -45,6 +45,11 @@
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
 
+
+#include "TFile.h"
+#include "TNtuple.h"
+
+/*
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 namespace {
@@ -57,9 +62,11 @@ namespace {
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
+*/
 int main(int argc,char** argv)
 {
+
+/*	
   // Evaluate arguments
   //
   if ( argc > 7 ) {
@@ -104,9 +111,9 @@ int main(int argc,char** argv)
   if ( nThreads > 0 ) { 
     runManager->SetNumberOfThreads(nThreads);
   }  
-#else
+#else*/
   G4RunManager * runManager = new G4RunManager;
-#endif
+//#endif
 
   // Set mandatory initialization classes
   //
@@ -118,7 +125,7 @@ int main(int argc,char** argv)
     
   auto actionInitialization = new B4cActionInitialization();
   runManager->SetUserInitialization(actionInitialization);
-  
+ /* 
   // Initialize visualization
   auto visManager = new G4VisExecutive;
   // G4VisExecutive can take a verbosity argument - see /vis/verbose guidance.
@@ -144,13 +151,24 @@ int main(int argc,char** argv)
     ui->SessionStart();
     delete ui;
   }
+*/
+
+  TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
+  TNtuple *n = (TNtuple*)f->Get("h1");
+
+  runManager->Initialize();
+
+  G4UImanager* UImanager = G4UImanager::GetUIpointer();
+  UImanager->SetVerboseLevel(0);
+
+  runManager->BeamOn(n->GetEntries());
 
   // Job termination
   // Free the store: user actions, physics_list and detector_description are
   // owned and deleted by the run manager, so they should not be deleted 
   // in the main() program !
 
-  delete visManager;
+  //delete visManager;
   delete runManager;
 }
 

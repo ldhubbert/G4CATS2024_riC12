@@ -1,9 +1,9 @@
 CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
- /home/laura/G4CATS2024/src/B4cActionInitialization.cc \
+ /home/laura/G4CATS2024_rootinput/src/B4cActionInitialization.cc \
  /usr/include/stdc-predef.h \
- /home/laura/G4CATS2024/include/B4cActionInitialization.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cActionInitialization.hh \
  /opt/g4/include/Geant4/G4VUserActionInitialization.hh \
- /home/laura/G4CATS2024/include/B4PrimaryGeneratorAction.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh \
  /opt/g4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
  /opt/g4/include/Geant4/G4Types.hh \
@@ -193,11 +193,11 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/laura/G4CATS2024/include/B4RunAction.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4RunAction.hh \
  /opt/g4/include/Geant4/G4UserRunAction.hh \
- /home/laura/G4CATS2024/include/B4cEventAction.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cEventAction.hh \
  /opt/g4/include/Geant4/G4UserEventAction.hh \
- /home/laura/G4CATS2024/include/B4cCalorHit.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh \
  /opt/g4/include/Geant4/G4VHit.hh /opt/g4/include/Geant4/globals.hh \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \

@@ -1,5 +1,3 @@
-#include "G4ThreeVector.hh"
-
 void testforsrc()
 {
 	TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
@@ -24,7 +22,7 @@ void testforsrc()
 		cout << "Y POSITION: " << y_position[row] << endl;
 		cout << "Z POSITION: " << z_position[row] << endl;
 
-		G4ThreeVector position(x_position[row], y_position[row], z_position[row];
+		ROOT::Math::XYZVectorF position(x_position[row], y_position[row], z_position[row]);
 
 		cout << "POSITION VECTOR: " << position << endl;
 	

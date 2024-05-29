@@ -16,7 +16,8 @@
 
 #include "TLorentzVector.h"
 #include "TFile.h"
-#include "MCNtuple.h"
+#include "G4ThreeVector.hh"
+#include "TNtuple.h"
 
 B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
  : G4VUserPrimaryGeneratorAction(),
@@ -27,11 +28,13 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
 
   // default particle kinematic
   //
-  auto particleDefinition 
+/*  auto particleDefinition 
     = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
   fParticleGun->SetParticleDefinition(particleDefinition);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
   fParticleGun->SetParticleEnergy(500.*MeV);
+
+*/
 }
 
 B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
@@ -73,6 +76,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   //fParticleGun->SetParticlePosition(G4ThreeVector(0*cm, 0., 0.));
 
   //fParticleGun->GeneratePrimaryVertex(anEvent);
+  
   
 
   TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
@@ -121,7 +125,7 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   Float_t y_position[n->GetEntries()];
   Float_t z_position[n->GetEntries()];
 
-  for (Int_t row = 0; /*row < n->GetEntries()*/ row < 3; row++)
+  for (Int_t row = 0; row < n->GetEntries(); row++)
   {
 	//loads the row data
   	n->GetEntry(row);
@@ -130,10 +134,10 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 	y_position[row] = n->GetArgs()[1];
 	z_position[row] = n->GetArgs()[2];
 
-	cout << "ROW #: " << row << endl;
-	cout << "X POSITION: " << x_position[row] << endl;
-	cout << "Y POSITION: " << y_position[row] << endl;
-	cout << "Z POSITION: " << z_position[row] << endl;
+	//cout << "ROW #: " << row << endl;
+	//cout << "X POSITION: " << x_position[row] << endl;
+	//cout << "Y POSITION: " << y_position[row] << endl;
+	//cout << "Z POSITION: " << z_position[row] << endl;
 
 	Float_t scattered_t_mom = n->GetArgs()[16];
 	fParticleGun->SetParticleMomentum(scattered_t_mom);
@@ -141,8 +145,12 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 	Float_t scattered_energy = n->GetArgs()[17];
 	fParticleGun->SetParticleEnergy(scattered_energy);
 
-	G4ThreeVector position(x_position[row], y_position[row], z_position[row];
+	G4ThreeVector position(x_position[row], y_position[row], z_position[row]);
 	fParticleGun->SetParticlePosition(position);
+
+	//Produce event
+	fParticleGun->GeneratePrimaryVertex(anEvent);
+	
 
   }
 

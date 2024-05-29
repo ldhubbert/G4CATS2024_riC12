@@ -1,7 +1,7 @@
 CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
- /home/laura/G4CATS2024/src/B4cDetectorConstruction.cc \
+ /home/laura/G4CATS2024_rootinput/src/B4cDetectorConstruction.cc \
  /usr/include/stdc-predef.h \
- /home/laura/G4CATS2024/include/B4cDetectorConstruction.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cDetectorConstruction.hh \
  /opt/g4/include/Geant4/G4VUserDetectorConstruction.hh \
  /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
  /opt/g4/include/Geant4/G4Types.hh \
@@ -195,7 +195,7 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /opt/g4/include/Geant4/globals.hh \
- /home/laura/G4CATS2024/include/B4cCalorimeterSD.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cCalorimeterSD.hh \
  /opt/g4/include/Geant4/G4VSensitiveDetector.hh \
  /opt/g4/include/Geant4/G4CollectionNameVector.hh \
  /opt/g4/include/Geant4/G4HCofThisEvent.hh \
@@ -329,7 +329,7 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /opt/g4/include/Geant4/G4VReadOutGeometry.hh \
  /opt/g4/include/Geant4/G4SensitiveVolumeList.hh \
  /opt/g4/include/Geant4/G4VSDFilter.hh \
- /home/laura/G4CATS2024/include/B4cCalorHit.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh \
  /opt/g4/include/Geant4/G4VHit.hh \
  /opt/g4/include/Geant4/G4THitsCollection.hh \
  /opt/g4/include/Geant4/G4Allocator.hh \

@@ -1,7 +1,7 @@
 CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
- /home/laura/G4CATS2024/src/B4PrimaryGeneratorAction.cc \
+ /home/laura/G4CATS2024_rootinput/src/B4PrimaryGeneratorAction.cc \
  /usr/include/stdc-predef.h \
- /home/laura/G4CATS2024/include/B4PrimaryGeneratorAction.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh \
  /opt/g4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
  /opt/g4/include/Geant4/G4Types.hh \
@@ -471,4 +471,70 @@ CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o: \
  /opt/g4/include/Geant4/G4ParticleTable.hh \
  /opt/g4/include/Geant4/G4ParticleDefinition.hh \
  /opt/g4/include/Geant4/G4SystemOfUnits.hh \
- /opt/g4/include/Geant4/Randomize.hh
+ /opt/g4/include/Geant4/Randomize.hh /opt/root/include/TLorentzVector.h \
+ /opt/root/include/TMath.h /opt/root/include/TMathBase.h \
+ /opt/root/include/RtypesCore.h /opt/root/include/ROOT/RConfig.hxx \
+ /opt/root/include/ROOT/../RVersion.h \
+ /opt/root/include/ROOT/../ROOT/RVersion.hxx \
+ /opt/root/include/RConfigure.h /opt/root/include/DllImport.h \
+ /opt/root/include/TError.h /opt/root/include/DllImport.h \
+ /usr/include/c++/13/cstdarg \
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/float.h \
+ /usr/include/c++/13/math.h /opt/root/include/TVector3.h \
+ /opt/root/include/TVector2.h /opt/root/include/TObject.h \
+ /opt/root/include/Rtypes.h /opt/root/include/strtok.h \
+ /opt/root/include/strlcpy.h /opt/root/include/snprintf.h \
+ /opt/root/include/TGenericClassInfo.h /opt/root/include/TSchemaHelper.h \
+ /opt/root/include/TIsAProxy.h /opt/root/include/TVirtualIsAProxy.h \
+ /opt/root/include/TStorage.h /opt/root/include/TVersionCheck.h \
+ /opt/root/include/RVersion.h /opt/root/include/TMatrix.h \
+ /opt/root/include/TMatrixF.h /opt/root/include/TMatrixT.h \
+ /opt/root/include/TMatrixTBase.h /opt/root/include/TMatrixFBasefwd.h \
+ /opt/root/include/TMatrixDBasefwd.h /opt/root/include/TVectorFfwd.h \
+ /opt/root/include/TVectorDfwd.h /opt/root/include/TMatrixTUtils.h \
+ /opt/root/include/TMatrixFfwd.h /opt/root/include/TMatrixFUtils.h \
+ /opt/root/include/TMatrixFUtilsfwd.h /opt/root/include/TRotation.h \
+ /opt/root/include/Math/Vector4D.h /opt/root/include/Math/Vector4Dfwd.h \
+ /opt/root/include/Math/GenVector/PxPyPzE4D.h \
+ /opt/root/include/Math/GenVector/eta.h \
+ /opt/root/include/Math/GenVector/etaMax.h \
+ /opt/root/include/Math/GenVector/GenVector_exception.h \
+ /opt/root/include/Math/GenVector/PtEtaPhiE4D.h \
+ /opt/root/include/Math/Math.h \
+ /opt/root/include/Math/GenVector/PxPyPzM4D.h \
+ /opt/root/include/Math/GenVector/PtEtaPhiM4D.h \
+ /opt/root/include/Math/GenVector/LorentzVector.h \
+ /opt/root/include/Math/GenVector/DisplacementVector3D.h \
+ /opt/root/include/Math/GenVector/Cartesian3D.h \
+ /opt/root/include/Math/GenVector/Polar3Dfwd.h \
+ /opt/root/include/Math/GenVector/PositionVector3Dfwd.h \
+ /opt/root/include/Math/GenVector/GenVectorIO.h \
+ /opt/root/include/Math/GenVector/BitReproducible.h \
+ /opt/root/include/Math/GenVector/CoordinateSystemTags.h \
+ /usr/include/c++/13/cassert /opt/root/include/TFile.h \
+ /opt/root/include/Compression.h /opt/root/include/TDirectoryFile.h \
+ /opt/root/include/TDirectory.h /opt/root/include/TNamed.h \
+ /opt/root/include/TString.h /opt/root/include/ROOT/RStringView.hxx \
+ /opt/root/include/ROOT/TypeTraits.hxx /opt/root/include/TClass.h \
+ /opt/root/include/TDictionary.h /opt/root/include/ESTLType.h \
+ /opt/root/include/TObjArray.h /opt/root/include/TSeqCollection.h \
+ /opt/root/include/TCollection.h /opt/root/include/TIterator.h \
+ /opt/root/include/TVirtualRWMutex.h /opt/root/include/TVirtualMutex.h \
+ /opt/root/include/ROOT/RRangeCast.hxx /opt/root/include/ROOT/RSpan.hxx \
+ /opt/root/include/ROOT/span.hxx /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h /opt/root/include/TUUID.h \
+ /opt/root/include/TList.h /opt/root/include/TBuffer.h \
+ /opt/root/include/TDataType.h /opt/root/include/Bytes.h \
+ /opt/root/include/Byteswap.h /opt/root/include/TDatime.h \
+ /opt/root/include/TUrl.h /opt/root/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root/include/Rtypes.h /opt/root/include/ROOT/TRWSpinLock.hxx \
+ /opt/root/include/ROOT/TSpinMutex.hxx \
+ /opt/g4/include/Geant4/G4ThreeVector.hh /opt/root/include/TNtuple.h \
+ /opt/root/include/TTree.h /opt/root/include/ROOT/TIOFeatures.hxx \
+ /opt/root/include/TArrayD.h /opt/root/include/TArray.h \
+ /opt/root/include/TArrayI.h /opt/root/include/TAttFill.h \
+ /opt/root/include/TAttLine.h /opt/root/include/TAttMarker.h \
+ /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
+ /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h

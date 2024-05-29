@@ -1,6 +1,7 @@
 CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
- /home/laura/G4CATS2024/exampleB4c.cc /usr/include/stdc-predef.h \
- /home/laura/G4CATS2024/include/B4cDetectorConstruction.hh \
+ /home/laura/G4CATS2024_rootinput/exampleB4c.cc \
+ /usr/include/stdc-predef.h \
+ /home/laura/G4CATS2024_rootinput/include/B4cDetectorConstruction.hh \
  /opt/g4/include/Geant4/G4VUserDetectorConstruction.hh \
  /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
  /opt/g4/include/Geant4/G4Types.hh \
@@ -194,7 +195,7 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /opt/g4/include/Geant4/globals.hh \
- /home/laura/G4CATS2024/include/B4cActionInitialization.hh \
+ /home/laura/G4CATS2024_rootinput/include/B4cActionInitialization.hh \
  /opt/g4/include/Geant4/G4VUserActionInitialization.hh \
  /opt/g4/include/Geant4/G4MTRunManager.hh \
  /opt/g4/include/Geant4/G4MTBarrier.hh \
@@ -630,4 +631,39 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4/include/Geant4/G4coutDestination.hh \
  /opt/g4/include/Geant4/G4UIbatch.hh \
  /opt/g4/include/Geant4/G4UIExecutive.hh \
- /opt/g4/include/Geant4/G4VUIshell.hh
+ /opt/g4/include/Geant4/G4VUIshell.hh /opt/root/include/TFile.h \
+ /opt/root/include/Compression.h /opt/root/include/RtypesCore.h \
+ /opt/root/include/ROOT/RConfig.hxx /opt/root/include/ROOT/../RVersion.h \
+ /opt/root/include/ROOT/../ROOT/RVersion.hxx \
+ /opt/root/include/RConfigure.h /opt/root/include/DllImport.h \
+ /opt/root/include/TDirectoryFile.h /opt/root/include/TDirectory.h \
+ /opt/root/include/TNamed.h /opt/root/include/TObject.h \
+ /opt/root/include/Rtypes.h /opt/root/include/strtok.h \
+ /opt/root/include/strlcpy.h /opt/root/include/snprintf.h \
+ /opt/root/include/TGenericClassInfo.h /opt/root/include/TSchemaHelper.h \
+ /opt/root/include/TIsAProxy.h /opt/root/include/TVirtualIsAProxy.h \
+ /opt/root/include/TStorage.h /opt/root/include/TVersionCheck.h \
+ /opt/root/include/RVersion.h /opt/root/include/TString.h \
+ /opt/root/include/TMathBase.h /opt/root/include/ROOT/RStringView.hxx \
+ /opt/root/include/ROOT/TypeTraits.hxx /usr/include/c++/13/cstdarg \
+ /opt/root/include/TClass.h /opt/root/include/TDictionary.h \
+ /opt/root/include/ESTLType.h /opt/root/include/TObjArray.h \
+ /opt/root/include/TSeqCollection.h /opt/root/include/TCollection.h \
+ /opt/root/include/TIterator.h /opt/root/include/TVirtualRWMutex.h \
+ /opt/root/include/TVirtualMutex.h /opt/root/include/ROOT/RRangeCast.hxx \
+ /opt/root/include/ROOT/RSpan.hxx /opt/root/include/ROOT/span.hxx \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/cassert /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h /opt/root/include/TUUID.h \
+ /opt/root/include/TList.h /opt/root/include/TBuffer.h \
+ /opt/root/include/TDataType.h /opt/root/include/Bytes.h \
+ /opt/root/include/Byteswap.h /opt/root/include/TDatime.h \
+ /opt/root/include/TUrl.h /opt/root/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root/include/Rtypes.h /opt/root/include/ROOT/TRWSpinLock.hxx \
+ /opt/root/include/ROOT/TSpinMutex.hxx /opt/root/include/TNtuple.h \
+ /opt/root/include/TTree.h /opt/root/include/ROOT/TIOFeatures.hxx \
+ /opt/root/include/TArrayD.h /opt/root/include/TArray.h \
+ /opt/root/include/TArrayI.h /opt/root/include/TAttFill.h \
+ /opt/root/include/TAttLine.h /opt/root/include/TAttMarker.h \
+ /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
+ /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h
