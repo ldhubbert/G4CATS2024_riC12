@@ -142,8 +142,8 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 	Float_t scattered_t_mom = n->GetArgs()[16];
 	fParticleGun->SetParticleMomentum(scattered_t_mom);
 
-	Float_t scattered_energy = n->GetArgs()[17];
-	fParticleGun->SetParticleEnergy(scattered_energy);
+	//Float_t scattered_energy = n->GetArgs()[17];
+	//fParticleGun->SetParticleEnergy(scattered_energy);
 
 	G4ThreeVector position(x_position[row], y_position[row], z_position[row]);
 	fParticleGun->SetParticlePosition(position);
