@@ -7,7 +7,7 @@ void H100MeV()
 	TString filename = "~/G4CATS2024_rootinput/RUN_RESULTS.root";
 	TFile *f = TFile::Open(filename);
 
-	TH1F *h1 = new TH1F("Histogram Statistics", "", 500, 0, 600);
+	TH1F *h1 = new TH1F("Histogram Statistics", "", 500, 280, 310);
 
 	//We define "r1" as the information pulled from tree "B4" in the file "~/G4CATS2024_rootinput/RUN_RESULTS.root"
 	TTreeReader r1("B4", f);
@@ -25,13 +25,13 @@ void H100MeV()
 	//For example, if the first particle enters CATS and sets off the core with 100MeV, but 0MeV everywhere else, the simulation registered a 100MeV particle. The final histogram will add 1 hit to the 100MeV bin.
 	while (r1.Next())
 	{
-		h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
+		h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
 	}
 
-	h1->GetXaxis()->SetTitle("Energy (MeV)");
+	h1->GetXaxis()->SetTitle("Energy (in MeV)");
 	h1->GetYaxis()->SetTitle("Counts");
 	h1->GetXaxis()->CenterTitle();
 	h1->GetYaxis()->CenterTitle();
-	h1->SetTitle("CATS");
+	h1->SetTitle("300MeV Beam Shot into CATS by EvGenBasic");
 	h1->Draw();
 }
