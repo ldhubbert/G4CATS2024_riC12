@@ -2,6 +2,7 @@
 /// \brief Implementation of the B4PrimaryGeneratorAction class
 
 #include "B4PrimaryGeneratorAction.hh"
+#include "B4File.hh"
 
 #include "G4RunManager.hh"
 #include "G4LogicalVolumeStore.hh"
@@ -23,18 +24,20 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
  : G4VUserPrimaryGeneratorAction(),
    fParticleGun(nullptr)
 {
+
+  //initializes the Particle Gun
   G4int nofParticles = 1;
   fParticleGun = new G4ParticleGun(nofParticles);
 
   // default particle kinematic
   //
-/*  auto particleDefinition 
+ /* auto particleDefinition 
     = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
   fParticleGun->SetParticleDefinition(particleDefinition);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
   fParticleGun->SetParticleEnergy(500.*MeV);
-
 */
+
 }
 
 B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
@@ -70,17 +73,65 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4Exception("B4PrimaryGeneratorAction::GeneratePrimaries()",
       "MyCode0002", JustWarning, msg);
   } 
-  
-  // Set gun position
-  //fParticleGun->SetParticlePosition(G4ThreeVector(4*cm, 0., -worldZHalfLength));//-worldZHalfLength
-  //fParticleGun->SetParticlePosition(G4ThreeVector(0*cm, 0., 0.));
+ 
+  //Setting up pointers to point at input file and TNtuple.
+  //TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
+  //TNtuple *n = (TNtuple*)f->Get("h1");
 
-  //fParticleGun->GeneratePrimaryVertex(anEvent);
-  
-  
+  //Since this file is re-implemented for each event, we must know what number event we are on to properly direct it to the correct particle information.
+  //Since it is a static variable, it is remembered (but the initial declaration counter = 0 is forgotten about after.)
+  //This is used as a kind of for loop.
+  static int counter = 0;
 
-  TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
-  TNtuple *n = (TNtuple*)f->Get("h1");
+  //Int_t number_of_events = n->GetEntries();
+
+  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
+  G4ParticleDefinition* particleDefinition = particleTable->FindParticle("gamma");
+  fParticleGun->SetParticleDefinition(particleDefinition);
+
+  Float_t x_position[number_of_events];
+  Float_t y_position[number_of_events];
+  Float_t z_position[number_of_events];
+
+  Float_t momentum_in_x_direction[number_of_events];
+  Float_t momentum_in_y_direction[number_of_events];
+  Float_t momentum_in_z_direction[number_of_events];
+
+  //Loads the data for the row corresponding to the number "counter"
+  n->GetEntry(counter);
+
+  //Particle Position
+  x_position[counter] = n->GetArgs()[0];
+  y_position[counter] = n->GetArgs()[1];
+  z_position[counter] = n->GetArgs()[2];
+
+  G4ThreeVector position(x_position[counter], y_position[counter], z_position[counter]);
+  std::cout << "Particle Position: " << position << std::endl;
+  fParticleGun->SetParticlePosition(position);
+
+  //Particle Momentum Direction
+  momentum_in_x_direction[counter] = n->GetArgs()[13];
+  momentum_in_y_direction[counter] = n->GetArgs()[14];
+  momentum_in_z_direction[counter] = n->GetArgs()[15];
+
+  G4ThreeVector momentum_direction(momentum_in_x_direction[counter], momentum_in_y_direction[counter], momentum_in_z_direction[counter]);
+  std::cout << "Particle Momentum Direction: " << momentum_direction << std::endl;
+  fParticleGun->SetParticleMomentumDirection(momentum_direction);
+
+  //Particle Energy
+  Float_t energy = n->GetArgs()[17];
+  std::cout << "Particle Energy: " << energy <<std::endl;
+  fParticleGun->SetParticleEnergy(energy);
+
+
+  //Produce an event!!
+  fParticleGun->GeneratePrimaryVertex(anEvent);
+
+
+  counter++;
+  std::cout << "static incremented: " << counter << std::endl;
+  
+  //Information about the TNtuple:
 
   //Where, in our TNtuple, each row corresponds to an event, and each column represents a different variable
   //For Compton scattering off of C12, those columns are:
@@ -113,47 +164,6 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   //
   //Direction cosines need to be multiplied by the total momentum in order to get the momentum in that direction.
   //Direction cosines are numbers between -1 and 1.
-  //
-  //We only want columns 0, 1, 2, 13, 14, 15, 16, 17
-  
-  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
-  G4ParticleDefinition* particleDefinition = particleTable->FindParticle("gamma");
-
-  fParticleGun->SetParticleDefinition(particleDefinition);
-
-  Float_t x_position[n->GetEntries()];
-  Float_t y_position[n->GetEntries()];
-  Float_t z_position[n->GetEntries()];
-
-  for (Int_t row = 0; row < n->GetEntries(); row++)
-  {
-	//loads the row data
-  	n->GetEntry(row);
-
-	x_position[row] = n->GetArgs()[0];
-	y_position[row] = n->GetArgs()[1];
-	z_position[row] = n->GetArgs()[2];
-
-	//cout << "ROW #: " << row << endl;
-	//cout << "X POSITION: " << x_position[row] << endl;
-	//cout << "Y POSITION: " << y_position[row] << endl;
-	//cout << "Z POSITION: " << z_position[row] << endl;
-
-	Float_t scattered_t_mom = n->GetArgs()[16];
-	fParticleGun->SetParticleMomentum(scattered_t_mom);
-
-	//Float_t scattered_energy = n->GetArgs()[17];
-	//fParticleGun->SetParticleEnergy(scattered_energy);
-
-	G4ThreeVector position(x_position[row], y_position[row], z_position[row]);
-	fParticleGun->SetParticlePosition(position);
-
-	//Produce event
-	fParticleGun->GeneratePrimaryVertex(anEvent);
-	
-
-  }
-
 
 }
 

@@ -29,6 +29,8 @@
 
 #include "B4cDetectorConstruction.hh"
 #include "B4cActionInitialization.hh"
+#include "B4PrimaryGeneratorAction.hh"
+#include "B4File.hh"
 
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
@@ -48,6 +50,11 @@
 
 #include "TFile.h"
 #include "TNtuple.h"
+
+TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
+TNtuple *n = (TNtuple*)f->Get("h1");
+const Int_t number_of_events = n->GetEntries();
+
 
 /*
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -153,15 +160,19 @@ int main(int argc,char** argv)
   }
 */
 
-  TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
-  TNtuple *n = (TNtuple*)f->Get("h1");
-
   runManager->Initialize();
 
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
   UImanager->SetVerboseLevel(0);
 
-  runManager->BeamOn(n->GetEntries());
+  //TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
+  //TNtuple *n = (TNtuple*)f->Get("h1");
+
+  //Int_t number_of_events = n->GetEntries();
+
+  //runManager->BeamOn(100);
+
+  runManager->BeamOn(number_of_events);
 
   // Job termination
   // Free the store: user actions, physics_list and detector_description are

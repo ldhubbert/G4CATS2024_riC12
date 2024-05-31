@@ -33,6 +33,9 @@
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "globals.hh"
 
+#include "TFile.h"
+#include "TNtuple.h"
+
 class G4ParticleGun;
 class G4Event;
 
@@ -57,7 +60,5 @@ public:
 private:
   G4ParticleGun*  fParticleGun; // G4 particle gun
 };
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

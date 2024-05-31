@@ -197,18 +197,68 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /usr/include/c++/13/bits/vector.tcc /opt/g4/include/Geant4/globals.hh \
  /home/laura/G4CATS2024_rootinput/include/B4cActionInitialization.hh \
  /opt/g4/include/Geant4/G4VUserActionInitialization.hh \
- /opt/g4/include/Geant4/G4MTRunManager.hh \
- /opt/g4/include/Geant4/G4MTBarrier.hh \
- /opt/g4/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
- /usr/include/c++/13/condition_variable \
+ /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh \
+ /opt/g4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /opt/root/include/TFile.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /opt/root/include/Compression.h /opt/root/include/RtypesCore.h \
+ /opt/root/include/ROOT/RConfig.hxx /opt/root/include/ROOT/../RVersion.h \
+ /opt/root/include/ROOT/../ROOT/RVersion.hxx \
+ /opt/root/include/RConfigure.h /opt/root/include/DllImport.h \
+ /opt/root/include/TDirectoryFile.h /opt/root/include/TDirectory.h \
+ /opt/root/include/TNamed.h /opt/root/include/TObject.h \
+ /opt/root/include/Rtypes.h /opt/root/include/strtok.h \
+ /opt/root/include/strlcpy.h /opt/root/include/snprintf.h \
+ /opt/root/include/TGenericClassInfo.h /opt/root/include/TSchemaHelper.h \
+ /opt/root/include/TIsAProxy.h /opt/root/include/TVirtualIsAProxy.h \
+ /opt/root/include/TStorage.h /opt/root/include/TVersionCheck.h \
+ /opt/root/include/RVersion.h /opt/root/include/TString.h \
+ /opt/root/include/TMathBase.h /opt/root/include/ROOT/RStringView.hxx \
+ /opt/root/include/ROOT/TypeTraits.hxx /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/future \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h /usr/include/c++/13/cstdarg \
+ /opt/root/include/TClass.h /opt/root/include/TDictionary.h \
+ /opt/root/include/ESTLType.h /opt/root/include/TObjArray.h \
+ /opt/root/include/TSeqCollection.h /opt/root/include/TCollection.h \
+ /opt/root/include/TIterator.h /opt/root/include/TVirtualRWMutex.h \
+ /opt/root/include/TVirtualMutex.h /opt/root/include/ROOT/RRangeCast.hxx \
+ /opt/root/include/ROOT/RSpan.hxx /opt/root/include/ROOT/span.hxx \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /usr/include/c++/13/cassert /usr/include/assert.h \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /opt/root/include/TUUID.h /opt/root/include/TList.h \
+ /opt/root/include/TBuffer.h /opt/root/include/TDataType.h \
+ /opt/root/include/Bytes.h /opt/root/include/Byteswap.h \
+ /opt/root/include/TDatime.h /opt/root/include/TUrl.h \
+ /opt/root/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root/include/Rtypes.h /opt/root/include/ROOT/TRWSpinLock.hxx \
+ /opt/root/include/ROOT/TSpinMutex.hxx \
+ /usr/include/c++/13/condition_variable /opt/root/include/TNtuple.h \
+ /opt/root/include/TTree.h /opt/root/include/ROOT/TIOFeatures.hxx \
+ /opt/root/include/TArrayD.h /opt/root/include/TArray.h \
+ /opt/root/include/TArrayI.h /opt/root/include/TAttFill.h \
+ /opt/root/include/TAttLine.h /opt/root/include/TAttMarker.h \
+ /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
+ /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h \
+ /home/laura/G4CATS2024_rootinput/include/B4File.hh \
+ /opt/g4/include/Geant4/G4MTRunManager.hh \
+ /opt/g4/include/Geant4/G4MTBarrier.hh \
+ /opt/g4/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
+ /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h \
@@ -216,16 +266,11 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4/include/Geant4/G4Profiler.icc /usr/include/c++/13/functional \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/array /usr/include/c++/13/compare \
  /opt/g4/include/Geant4/PTL/Globals.hh \
  /opt/g4/include/Geant4/PTL/Types.hh \
  /opt/g4/include/Geant4/PTL/Utility.hh /usr/include/c++/13/set \
  /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
  /opt/g4/include/Geant4/G4RNGHelper.hh /usr/include/c++/13/queue \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_queue.h \
@@ -258,12 +303,7 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4/include/Geant4/CLHEP/Units/PhysicalConstants.h \
  /opt/g4/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /opt/g4/include/Geant4/trkdefs.hh \
- /opt/g4/include/Geant4/G4LogicalVolume.hh /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /opt/g4/include/Geant4/G4LogicalVolume.hh \
  /opt/g4/include/Geant4/G4Region.hh \
  /opt/g4/include/Geant4/G4GeomSplitter.hh \
  /opt/g4/include/Geant4/geomwdefs.hh /opt/g4/include/Geant4/G4AutoLock.hh \
@@ -300,7 +340,7 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4/include/Geant4/G4TouchableHandle.hh \
  /opt/g4/include/Geant4/G4VTouchable.hh \
  /opt/g4/include/Geant4/G4TouchableHistory.hh \
- /opt/g4/include/Geant4/G4NavigationHistory.hh /usr/include/assert.h \
+ /opt/g4/include/Geant4/G4NavigationHistory.hh \
  /opt/g4/include/Geant4/G4AffineTransform.hh \
  /opt/g4/include/Geant4/G4Transform3D.hh \
  /opt/g4/include/Geant4/CLHEP/Geometry/Transform3D.h \
@@ -631,39 +671,4 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4/include/Geant4/G4coutDestination.hh \
  /opt/g4/include/Geant4/G4UIbatch.hh \
  /opt/g4/include/Geant4/G4UIExecutive.hh \
- /opt/g4/include/Geant4/G4VUIshell.hh /opt/root/include/TFile.h \
- /opt/root/include/Compression.h /opt/root/include/RtypesCore.h \
- /opt/root/include/ROOT/RConfig.hxx /opt/root/include/ROOT/../RVersion.h \
- /opt/root/include/ROOT/../ROOT/RVersion.hxx \
- /opt/root/include/RConfigure.h /opt/root/include/DllImport.h \
- /opt/root/include/TDirectoryFile.h /opt/root/include/TDirectory.h \
- /opt/root/include/TNamed.h /opt/root/include/TObject.h \
- /opt/root/include/Rtypes.h /opt/root/include/strtok.h \
- /opt/root/include/strlcpy.h /opt/root/include/snprintf.h \
- /opt/root/include/TGenericClassInfo.h /opt/root/include/TSchemaHelper.h \
- /opt/root/include/TIsAProxy.h /opt/root/include/TVirtualIsAProxy.h \
- /opt/root/include/TStorage.h /opt/root/include/TVersionCheck.h \
- /opt/root/include/RVersion.h /opt/root/include/TString.h \
- /opt/root/include/TMathBase.h /opt/root/include/ROOT/RStringView.hxx \
- /opt/root/include/ROOT/TypeTraits.hxx /usr/include/c++/13/cstdarg \
- /opt/root/include/TClass.h /opt/root/include/TDictionary.h \
- /opt/root/include/ESTLType.h /opt/root/include/TObjArray.h \
- /opt/root/include/TSeqCollection.h /opt/root/include/TCollection.h \
- /opt/root/include/TIterator.h /opt/root/include/TVirtualRWMutex.h \
- /opt/root/include/TVirtualMutex.h /opt/root/include/ROOT/RRangeCast.hxx \
- /opt/root/include/ROOT/RSpan.hxx /opt/root/include/ROOT/span.hxx \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/cassert /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h /opt/root/include/TUUID.h \
- /opt/root/include/TList.h /opt/root/include/TBuffer.h \
- /opt/root/include/TDataType.h /opt/root/include/Bytes.h \
- /opt/root/include/Byteswap.h /opt/root/include/TDatime.h \
- /opt/root/include/TUrl.h /opt/root/include/ROOT/RConcurrentHashColl.hxx \
- /opt/root/include/Rtypes.h /opt/root/include/ROOT/TRWSpinLock.hxx \
- /opt/root/include/ROOT/TSpinMutex.hxx /opt/root/include/TNtuple.h \
- /opt/root/include/TTree.h /opt/root/include/ROOT/TIOFeatures.hxx \
- /opt/root/include/TArrayD.h /opt/root/include/TArray.h \
- /opt/root/include/TArrayI.h /opt/root/include/TAttFill.h \
- /opt/root/include/TAttLine.h /opt/root/include/TAttMarker.h \
- /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
- /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h
+ /opt/g4/include/Geant4/G4VUIshell.hh

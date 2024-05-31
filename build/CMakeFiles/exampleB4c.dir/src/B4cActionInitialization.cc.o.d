@@ -192,17 +192,71 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h \
+ /usr/include/c++/13/bits/unique_lock.h /opt/root/include/TFile.h \
+ /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /opt/root/include/Compression.h /opt/root/include/RtypesCore.h \
+ /opt/root/include/ROOT/RConfig.hxx /opt/root/include/ROOT/../RVersion.h \
+ /opt/root/include/ROOT/../ROOT/RVersion.hxx \
+ /opt/root/include/RConfigure.h /opt/root/include/DllImport.h \
+ /opt/root/include/TDirectoryFile.h /opt/root/include/TDirectory.h \
+ /opt/root/include/TNamed.h /opt/root/include/TObject.h \
+ /opt/root/include/Rtypes.h /opt/root/include/strtok.h \
+ /opt/root/include/strlcpy.h /opt/root/include/snprintf.h \
+ /opt/root/include/TGenericClassInfo.h /opt/root/include/TSchemaHelper.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /opt/root/include/TIsAProxy.h \
+ /opt/root/include/TVirtualIsAProxy.h /opt/root/include/TStorage.h \
+ /opt/root/include/TVersionCheck.h /opt/root/include/RVersion.h \
+ /opt/root/include/TString.h /opt/root/include/TMathBase.h \
+ /opt/root/include/ROOT/RStringView.hxx \
+ /opt/root/include/ROOT/TypeTraits.hxx /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h /usr/include/c++/13/cstdarg \
+ /opt/root/include/TClass.h /opt/root/include/TDictionary.h \
+ /opt/root/include/ESTLType.h /opt/root/include/TObjArray.h \
+ /opt/root/include/TSeqCollection.h /opt/root/include/TCollection.h \
+ /opt/root/include/TIterator.h /opt/root/include/TVirtualRWMutex.h \
+ /opt/root/include/TVirtualMutex.h /opt/root/include/ROOT/RRangeCast.hxx \
+ /opt/root/include/ROOT/RSpan.hxx /opt/root/include/ROOT/span.hxx \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /usr/include/c++/13/cassert /usr/include/assert.h \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /opt/root/include/TUUID.h /opt/root/include/TList.h \
+ /opt/root/include/TBuffer.h /opt/root/include/TDataType.h \
+ /opt/root/include/Bytes.h /opt/root/include/Byteswap.h \
+ /opt/root/include/TDatime.h /opt/root/include/TUrl.h \
+ /opt/root/include/ROOT/RConcurrentHashColl.hxx \
+ /opt/root/include/Rtypes.h /opt/root/include/ROOT/TRWSpinLock.hxx \
+ /opt/root/include/ROOT/TSpinMutex.hxx \
+ /usr/include/c++/13/condition_variable /opt/root/include/TNtuple.h \
+ /opt/root/include/TTree.h /opt/root/include/ROOT/TIOFeatures.hxx \
+ /opt/root/include/TArrayD.h /opt/root/include/TArray.h \
+ /opt/root/include/TArrayI.h /opt/root/include/TAttFill.h \
+ /opt/root/include/TAttLine.h /opt/root/include/TAttMarker.h \
+ /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
+ /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h \
  /home/laura/G4CATS2024_rootinput/include/B4RunAction.hh \
  /opt/g4/include/Geant4/G4UserRunAction.hh \
  /home/laura/G4CATS2024_rootinput/include/B4cEventAction.hh \
  /opt/g4/include/Geant4/G4UserEventAction.hh \
  /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh \
  /opt/g4/include/Geant4/G4VHit.hh /opt/g4/include/Geant4/globals.hh \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
  /opt/g4/include/Geant4/G4THitsCollection.hh \
  /opt/g4/include/Geant4/G4Allocator.hh \
  /opt/g4/include/Geant4/G4AllocatorPool.hh \
@@ -213,15 +267,7 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /opt/g4/include/Geant4/CLHEP/Utility/defs.h \
  /opt/g4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
  /opt/g4/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
- /usr/include/c++/13/condition_variable \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/future \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h

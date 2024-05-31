@@ -4,12 +4,12 @@ void H100MeV()
 	c1->Divide(1,1);
 	c1->cd(1);
 	
-	TString filename = "~/G4CATS2024_rootinput/RUN_RESULTS1.root";
+	TString filename = "~/G4CATS2024_rootinput/RUN_RESULTS.root";
 	TFile *f = TFile::Open(filename);
 
-	TH1F *h1 = new TH1F("Histogram Statistics", "", 100, 0, 400);
+	TH1F *h1 = new TH1F("Histogram Statistics", "", 500, 0, 600);
 
-	//We define "r1" as the information pulled from tree "B4" in the file "~/G4CATS2024_rootinput/RUN_RESULTS1.root"
+	//We define "r1" as the information pulled from tree "B4" in the file "~/G4CATS2024_rootinput/RUN_RESULTS.root"
 	TTreeReader r1("B4", f);
 	TTreeReaderValue<Double_t> Ecore(r1, "Ecore");
 	TTreeReaderValue<Double_t> Eann1(r1, "Eann1");
@@ -32,6 +32,6 @@ void H100MeV()
 	h1->GetYaxis()->SetTitle("Counts");
 	h1->GetXaxis()->CenterTitle();
 	h1->GetYaxis()->CenterTitle();
-	h1->SetTitle("300MeV Incident Beam from EvGen");
+	h1->SetTitle("CATS");
 	h1->Draw();
 }

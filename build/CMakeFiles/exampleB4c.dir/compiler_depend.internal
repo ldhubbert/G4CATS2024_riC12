@@ -3,6 +3,8 @@
 
 CMakeFiles/exampleB4c.dir/exampleB4c.cc.o
  /home/laura/G4CATS2024_rootinput/exampleB4c.cc
+ /home/laura/G4CATS2024_rootinput/include/B4File.hh
+ /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh
  /home/laura/G4CATS2024_rootinput/include/B4cActionInitialization.hh
  /home/laura/G4CATS2024_rootinput/include/B4cDetectorConstruction.hh
  /opt/g4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
@@ -355,6 +357,7 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o
  /opt/g4/include/Geant4/G4VUserDetectorConstruction.hh
  /opt/g4/include/Geant4/G4VUserEventInformation.hh
  /opt/g4/include/Geant4/G4VUserPhysicsList.hh
+ /opt/g4/include/Geant4/G4VUserPrimaryGeneratorAction.hh
  /opt/g4/include/Geant4/G4VUserTrackInformation.hh
  /opt/g4/include/Geant4/G4VViewer.hh
  /opt/g4/include/Geant4/G4VViewer.icc
@@ -858,6 +861,7 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o
 
 CMakeFiles/exampleB4c.dir/src/B4PrimaryGeneratorAction.cc.o
  /home/laura/G4CATS2024_rootinput/src/B4PrimaryGeneratorAction.cc
+ /home/laura/G4CATS2024_rootinput/include/B4File.hh
  /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh
  /opt/g4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /opt/g4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -2201,10 +2205,74 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /opt/g4/include/Geant4/globals.hh
  /opt/g4/include/Geant4/templates.hh
  /opt/g4/include/Geant4/tls.hh
+ /opt/root/include/Bytes.h
+ /opt/root/include/Byteswap.h
+ /opt/root/include/Compression.h
+ /opt/root/include/DllImport.h
+ /opt/root/include/ESTLType.h
+ /opt/root/include/RConfigure.h
+ /opt/root/include/ROOT/RVersion.hxx
+ /opt/root/include/RVersion.h
+ /opt/root/include/ROOT/RConcurrentHashColl.hxx
+ /opt/root/include/ROOT/RConfig.hxx
+ /opt/root/include/ROOT/RRangeCast.hxx
+ /opt/root/include/ROOT/RSpan.hxx
+ /opt/root/include/ROOT/RStringView.hxx
+ /opt/root/include/ROOT/TIOFeatures.hxx
+ /opt/root/include/ROOT/TRWSpinLock.hxx
+ /opt/root/include/ROOT/TSpinMutex.hxx
+ /opt/root/include/ROOT/TypeTraits.hxx
+ /opt/root/include/ROOT/span.hxx
+ /opt/root/include/RVersion.h
+ /opt/root/include/Rtypes.h
+ /opt/root/include/RtypesCore.h
+ /opt/root/include/TArray.h
+ /opt/root/include/TArrayD.h
+ /opt/root/include/TArrayI.h
+ /opt/root/include/TAttFill.h
+ /opt/root/include/TAttLine.h
+ /opt/root/include/TAttMarker.h
+ /opt/root/include/TBits.h
+ /opt/root/include/TBranch.h
+ /opt/root/include/TBranchCacheInfo.h
+ /opt/root/include/TBuffer.h
+ /opt/root/include/TClass.h
+ /opt/root/include/TCollection.h
+ /opt/root/include/TDataType.h
+ /opt/root/include/TDatime.h
+ /opt/root/include/TDictionary.h
+ /opt/root/include/TDirectory.h
+ /opt/root/include/TDirectoryFile.h
+ /opt/root/include/TFile.h
+ /opt/root/include/TGenericClassInfo.h
+ /opt/root/include/TIsAProxy.h
+ /opt/root/include/TIterator.h
+ /opt/root/include/TList.h
+ /opt/root/include/TMathBase.h
+ /opt/root/include/TNamed.h
+ /opt/root/include/TNtuple.h
+ /opt/root/include/TObjArray.h
+ /opt/root/include/TObject.h
+ /opt/root/include/TSchemaHelper.h
+ /opt/root/include/TSeqCollection.h
+ /opt/root/include/TStorage.h
+ /opt/root/include/TString.h
+ /opt/root/include/TTree.h
+ /opt/root/include/TUUID.h
+ /opt/root/include/TUrl.h
+ /opt/root/include/TVersionCheck.h
+ /opt/root/include/TVirtualIsAProxy.h
+ /opt/root/include/TVirtualMutex.h
+ /opt/root/include/TVirtualRWMutex.h
+ /opt/root/include/TVirtualTreePlayer.h
+ /opt/root/include/snprintf.h
+ /opt/root/include/strlcpy.h
+ /opt/root/include/strtok.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
  /usr/include/asm/errno.h
+ /usr/include/assert.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
  /usr/include/bits/cpu-set.h
@@ -2280,10 +2348,13 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/bits/wordsize.h
  /usr/include/bits/xopen_lim.h
  /usr/include/c++/13/algorithm
+ /usr/include/c++/13/array
  /usr/include/c++/13/atomic
+ /usr/include/c++/13/backward/auto_ptr.h
  /usr/include/c++/13/backward/binders.h
  /usr/include/c++/13/bit
  /usr/include/c++/13/bits/algorithmfwd.h
+ /usr/include/c++/13/bits/align.h
  /usr/include/c++/13/bits/alloc_traits.h
  /usr/include/c++/13/bits/allocated_ptr.h
  /usr/include/c++/13/bits/allocator.h
@@ -2302,6 +2373,7 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/bits/cpp_type_traits.h
  /usr/include/c++/13/bits/cxxabi_forced.h
  /usr/include/c++/13/bits/cxxabi_init_exception.h
+ /usr/include/c++/13/bits/enable_special_members.h
  /usr/include/c++/13/bits/erase_if.h
  /usr/include/c++/13/bits/exception.h
  /usr/include/c++/13/bits/exception_defines.h
@@ -2309,6 +2381,8 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/bits/functexcept.h
  /usr/include/c++/13/bits/functional_hash.h
  /usr/include/c++/13/bits/hash_bytes.h
+ /usr/include/c++/13/bits/hashtable.h
+ /usr/include/c++/13/bits/hashtable_policy.h
  /usr/include/c++/13/bits/invoke.h
  /usr/include/c++/13/bits/ios_base.h
  /usr/include/c++/13/bits/istream.tcc
@@ -2337,6 +2411,7 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/bits/refwrap.h
  /usr/include/c++/13/bits/requires_hosted.h
  /usr/include/c++/13/bits/shared_ptr.h
+ /usr/include/c++/13/bits/shared_ptr_atomic.h
  /usr/include/c++/13/bits/shared_ptr_base.h
  /usr/include/c++/13/bits/specfun.h
  /usr/include/c++/13/bits/sstream.tcc
@@ -2356,10 +2431,13 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/bits/stl_map.h
  /usr/include/c++/13/bits/stl_multimap.h
  /usr/include/c++/13/bits/stl_pair.h
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h
+ /usr/include/c++/13/bits/stl_relops.h
  /usr/include/c++/13/bits/stl_tempbuf.h
  /usr/include/c++/13/bits/stl_tree.h
  /usr/include/c++/13/bits/stl_uninitialized.h
  /usr/include/c++/13/bits/stl_vector.h
+ /usr/include/c++/13/bits/stream_iterator.h
  /usr/include/c++/13/bits/streambuf.tcc
  /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
@@ -2368,18 +2446,22 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/bits/uniform_int_dist.h
  /usr/include/c++/13/bits/unique_lock.h
  /usr/include/c++/13/bits/unique_ptr.h
+ /usr/include/c++/13/bits/unordered_set.h
  /usr/include/c++/13/bits/uses_allocator.h
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
  /usr/include/c++/13/bits/vector.tcc
+ /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
  /usr/include/c++/13/chrono
  /usr/include/c++/13/climits
  /usr/include/c++/13/clocale
  /usr/include/c++/13/cmath
+ /usr/include/c++/13/compare
  /usr/include/c++/13/complex
  /usr/include/c++/13/condition_variable
+ /usr/include/c++/13/cstdarg
  /usr/include/c++/13/cstddef
  /usr/include/c++/13/cstdint
  /usr/include/c++/13/cstdio
@@ -2405,14 +2487,17 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/iosfwd
  /usr/include/c++/13/iostream
  /usr/include/c++/13/istream
+ /usr/include/c++/13/iterator
  /usr/include/c++/13/limits
  /usr/include/c++/13/locale
  /usr/include/c++/13/map
+ /usr/include/c++/13/memory
  /usr/include/c++/13/mutex
  /usr/include/c++/13/new
  /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/execution_defs.h
  /usr/include/c++/13/pstl/glue_algorithm_defs.h
+ /usr/include/c++/13/pstl/glue_memory_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/ratio
  /usr/include/c++/13/sstream
@@ -2437,6 +2522,8 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o
  /usr/include/c++/13/tuple
  /usr/include/c++/13/type_traits
  /usr/include/c++/13/typeinfo
+ /usr/include/c++/13/unordered_set
+ /usr/include/c++/13/utility
  /usr/include/c++/13/vector
  /usr/include/c++/13/x86_64-redhat-linux/bits/atomic_word.h
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++allocator.h
