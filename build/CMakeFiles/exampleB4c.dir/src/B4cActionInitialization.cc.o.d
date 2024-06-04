@@ -2,12 +2,13 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /home/laura/G4CATS2024_rootinput/src/B4cActionInitialization.cc \
  /usr/include/stdc-predef.h \
  /home/laura/G4CATS2024_rootinput/include/B4cActionInitialization.hh \
- /opt/g4/include/Geant4/G4VUserActionInitialization.hh \
+ /opt/g4-new/include/Geant4/G4VUserActionInitialization.hh \
  /home/laura/G4CATS2024_rootinput/include/B4PrimaryGeneratorAction.hh \
- /opt/g4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
- /opt/g4/include/Geant4/G4Types.hh \
- /opt/g4/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
+ /opt/g4-new/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /opt/g4-new/include/Geant4/globals.hh \
+ /opt/g4-new/include/Geant4/G4ios.hh \
+ /opt/g4-new/include/Geant4/G4Types.hh \
+ /opt/g4-new/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
@@ -151,7 +152,7 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc /opt/g4/include/Geant4/tls.hh \
+ /usr/include/c++/13/bits/sstream.tcc /opt/g4-new/include/Geant4/tls.hh \
  /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -160,19 +161,19 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /opt/g4/include/Geant4/G4String.hh /usr/include/c++/13/cstring \
+ /opt/g4-new/include/Geant4/G4String.hh /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /opt/g4/include/Geant4/G4String.icc /opt/g4/include/Geant4/templates.hh \
- /usr/include/c++/13/climits \
+ /opt/g4-new/include/Geant4/G4String.icc \
+ /opt/g4-new/include/Geant4/templates.hh /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /opt/g4/include/Geant4/G4Exception.hh \
- /opt/g4/include/Geant4/G4ExceptionSeverity.hh \
- /opt/g4/include/Geant4/G4EnvironmentUtils.hh /usr/include/c++/13/iomanip \
- /usr/include/c++/13/locale \
+ /usr/include/bits/uio_lim.h /opt/g4-new/include/Geant4/G4Exception.hh \
+ /opt/g4-new/include/Geant4/G4ExceptionSeverity.hh \
+ /opt/g4-new/include/Geant4/G4EnvironmentUtils.hh \
+ /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/c++/13/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/messages_members.h \
@@ -252,21 +253,22 @@ CMakeFiles/exampleB4c.dir/src/B4cActionInitialization.cc.o: \
  /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
  /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h \
  /home/laura/G4CATS2024_rootinput/include/B4RunAction.hh \
- /opt/g4/include/Geant4/G4UserRunAction.hh \
+ /opt/g4-new/include/Geant4/G4UserRunAction.hh \
  /home/laura/G4CATS2024_rootinput/include/B4cEventAction.hh \
- /opt/g4/include/Geant4/G4UserEventAction.hh \
+ /opt/g4-new/include/Geant4/G4UserEventAction.hh \
  /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh \
- /opt/g4/include/Geant4/G4VHit.hh /opt/g4/include/Geant4/globals.hh \
- /opt/g4/include/Geant4/G4THitsCollection.hh \
- /opt/g4/include/Geant4/G4Allocator.hh \
- /opt/g4/include/Geant4/G4AllocatorPool.hh \
- /opt/g4/include/Geant4/G4VHitsCollection.hh \
- /opt/g4/include/Geant4/G4Allocator.hh \
- /opt/g4/include/Geant4/G4ThreeVector.hh \
- /opt/g4/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /opt/g4/include/Geant4/CLHEP/Utility/defs.h \
- /opt/g4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /opt/g4/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
+ /opt/g4-new/include/Geant4/G4VHit.hh \
+ /opt/g4-new/include/Geant4/globals.hh \
+ /opt/g4-new/include/Geant4/G4THitsCollection.hh \
+ /opt/g4-new/include/Geant4/G4Allocator.hh \
+ /opt/g4-new/include/Geant4/G4AllocatorPool.hh \
+ /opt/g4-new/include/Geant4/G4VHitsCollection.hh \
+ /opt/g4-new/include/Geant4/G4Allocator.hh \
+ /opt/g4-new/include/Geant4/G4ThreeVector.hh \
+ /opt/g4-new/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /opt/g4-new/include/Geant4/CLHEP/Utility/defs.h \
+ /opt/g4-new/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /opt/g4-new/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
  /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
