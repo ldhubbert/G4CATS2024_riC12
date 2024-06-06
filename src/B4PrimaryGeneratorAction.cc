@@ -164,8 +164,9 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
   else if (macro.size())
   {
-  //need code to remember macro and hardcode values, like static int counter?
-  
+
+  //The following line needs to be in the code, even if you are running a macro file ("./build/exampleB4c -m run1.mac")
+  //If you delete this line, the computer will get mad at you :(  
   //Generate an event
   fParticleGun->GeneratePrimaryVertex(anEvent);
 
