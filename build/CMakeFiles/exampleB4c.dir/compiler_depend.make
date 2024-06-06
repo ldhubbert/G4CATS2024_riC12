@@ -145,8 +145,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: /home/laura/G4CATS2024_rootinput/exam
   /opt/g4-new/include/Geant4/G4LogicalVolume.icc \
   /opt/g4-new/include/Geant4/G4LorentzVector.hh \
   /opt/g4-new/include/Geant4/G4MCCIndexConversionTable.hh \
-  /opt/g4-new/include/Geant4/G4MTBarrier.hh \
-  /opt/g4-new/include/Geant4/G4MTRunManager.hh \
   /opt/g4-new/include/Geant4/G4Material.hh \
   /opt/g4-new/include/Geant4/G4MaterialCutsCouple.hh \
   /opt/g4-new/include/Geant4/G4MaterialPropertiesIndex.hh \
@@ -222,7 +220,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: /home/laura/G4CATS2024_rootinput/exam
   /opt/g4-new/include/Geant4/G4Profiler.hh \
   /opt/g4-new/include/Geant4/G4Profiler.icc \
   /opt/g4-new/include/Geant4/G4PseudoScene.hh \
-  /opt/g4-new/include/Geant4/G4RNGHelper.hh \
   /opt/g4-new/include/Geant4/G4RayTracer.hh \
   /opt/g4-new/include/Geant4/G4ReferenceCountedHandle.hh \
   /opt/g4-new/include/Geant4/G4Region.hh \
@@ -665,7 +662,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: /home/laura/G4CATS2024_rootinput/exam
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_queue.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
@@ -746,7 +742,6 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: /home/laura/G4CATS2024_rootinput/exam
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/queue \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/regex \
   /usr/include/c++/13/set \
@@ -4567,6 +4562,8 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/tools/histo/h2:
 
+/opt/g4-new/include/Geant4/tools/histo/h1:
+
 /opt/g4-new/include/Geant4/tools/histo/b1:
 
 /opt/g4-new/include/Geant4/G4HCtable.hh:
@@ -4764,8 +4761,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /usr/include/c++/13/set:
 
 /usr/include/c++/13/ratio:
-
-/usr/include/c++/13/queue:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
@@ -5039,6 +5034,8 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /usr/include/c++/13/bit:
 
+/usr/include/c++/13/backward/auto_ptr.h:
+
 /usr/include/c++/13/atomic:
 
 /usr/include/c++/13/cctype:
@@ -5062,14 +5059,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/bits/types/struct_sigstack.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/opt/root/include/TMatrixFUtils.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /opt/g4-new/include/Geant4/G4SteppingManager.hh:
 
@@ -5171,6 +5160,18 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/G4VUserPhysicsList.hh:
 
+/opt/g4-new/include/Geant4/G4ParameterisedNavigation.hh:
+
+/opt/g4-new/include/Geant4/G4ICRU90StoppingData.hh:
+
+/opt/g4-new/include/Geant4/G4Cache.hh:
+
+/opt/root/include/TMatrixTUtils.h:
+
+/opt/g4-new/include/Geant4/CLHEP/Random/RandBit.h:
+
+/opt/root/include/TDirectory.h:
+
 /opt/g4-new/include/Geant4/G4PhysicsVectorType.hh:
 
 /usr/include/bits/xopen_lim.h:
@@ -5243,14 +5244,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/G4MaterialCutsCouple.hh:
 
-/opt/g4-new/include/Geant4/tools/histo/h1:
-
-/opt/g4-new/include/Geant4/G4MTBarrier.hh:
-
-/opt/root/include/ROOT/RConfig.hxx:
-
-/usr/include/bits/flt-eval-method.h:
-
 /opt/g4-new/include/Geant4/G4MCCIndexConversionTable.hh:
 
 /usr/include/bits/wordsize.h:
@@ -5280,8 +5273,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/g4-new/include/Geant4/G4IonisParamElm.hh:
 
 /opt/g4-new/include/Geant4/G4NavigationLogger.hh:
-
-/opt/g4-new/include/Geant4/G4MTRunManager.hh:
 
 /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh:
 
@@ -5314,6 +5305,10 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/g4-new/include/Geant4/G4SmartVoxelNode.hh:
 
 /usr/include/bits/local_lim.h:
+
+/opt/g4-new/include/Geant4/G4SubEvent.hh:
+
+/usr/include/bits/mathcalls-narrow.h:
 
 /opt/g4-new/include/Geant4/G4PrimaryTransformer.hh:
 
@@ -5370,6 +5365,10 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/root/include/Math/GenVector/GenVectorIO.h:
 
 /opt/g4-new/include/Geant4/CLHEP/Random/Randomize.h:
+
+/opt/root/include/TMatrixFUtils.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /opt/g4-new/include/Geant4/G4PhysicalVolumeModel.hh:
 
@@ -5429,6 +5428,8 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/G4MaterialTable.hh:
 
+/usr/include/bits/types/struct_sched_param.h:
+
 /opt/g4-new/include/Geant4/CLHEP/Random/RandGeneral.icc:
 
 /opt/g4-new/include/Geant4/G4Normal3D.hh:
@@ -5483,19 +5484,9 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /usr/include/bits/types/FILE.h:
 
-/opt/g4-new/include/Geant4/G4ParameterisedNavigation.hh:
-
-/opt/g4-new/include/Geant4/G4ICRU90StoppingData.hh:
-
-/opt/g4-new/include/Geant4/G4Cache.hh:
-
-/opt/root/include/TMatrixTUtils.h:
-
-/opt/g4-new/include/Geant4/CLHEP/Random/RandBit.h:
-
-/opt/root/include/TDirectory.h:
-
 /opt/g4-new/include/Geant4/CLHEP/Random/RandGauss.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/13/condition_variable:
 
@@ -5564,16 +5555,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/g4-new/include/Geant4/CLHEP/Random/RandPoissonQ.h:
 
 /opt/g4-new/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/opt/g4-new/include/Geant4/G4RNGHelper.hh:
-
-/opt/g4-new/include/Geant4/G4VisExecutive.hh:
-
-/opt/g4-new/include/Geant4/geomdefs.hh:
-
-/usr/include/bits/timesize.h:
 
 /opt/g4-new/include/Geant4/G4AffineTransform.hh:
 
@@ -5755,6 +5736,10 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/G4Ellipsoid.hh:
 
+/usr/include/c++/13/backward/binders.h:
+
+/opt/g4-new/include/Geant4/G4String.icc:
+
 /opt/g4-new/include/Geant4/G4MaterialPropertyVector.hh:
 
 /opt/g4-new/include/Geant4/G4THnToolsManager.hh:
@@ -5808,6 +5793,12 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /usr/include/c++/13/bits/regex_scanner.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
+
+/opt/g4-new/include/Geant4/G4VisExecutive.hh:
+
+/opt/g4-new/include/Geant4/geomdefs.hh:
+
+/usr/include/bits/timesize.h:
 
 /opt/root/include/RVersion.h:
 
@@ -5888,14 +5879,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/g4-new/include/Geant4/CLHEP/Random/RandomEngine.h:
 
 /opt/g4-new/include/Geant4/G4AttValue.hh:
-
-/usr/include/c++/13/backward/binders.h:
-
-/opt/g4-new/include/Geant4/G4String.icc:
-
-/opt/g4-new/include/Geant4/G4SubEvent.hh:
-
-/usr/include/bits/mathcalls-narrow.h:
 
 /opt/g4-new/include/Geant4/CLHEP/Vector/RotationY.icc:
 
@@ -6117,8 +6100,6 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 
 /opt/g4-new/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
 
-/usr/include/c++/13/bits/stl_queue.h:
-
 /opt/root/include/TBuffer.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
@@ -6258,6 +6239,10 @@ CMakeFiles/exampleB4c.dir/src/B4cEventAction.cc.o: /home/laura/G4CATS2024_rootin
 /opt/root/include/ROOT/RConcurrentHashColl.hxx:
 
 /usr/include/bits/siginfo-consts.h:
+
+/opt/root/include/ROOT/RConfig.hxx:
+
+/usr/include/bits/flt-eval-method.h:
 
 /opt/g4-new/include/Geant4/geomwdefs.hh:
 

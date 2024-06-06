@@ -257,27 +257,10 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/root/include/TVirtualTreePlayer.h /opt/root/include/TBranch.h \
  /opt/root/include/TBranchCacheInfo.h /opt/root/include/TBits.h \
  /home/laura/G4CATS2024_rootinput/include/B4File.hh \
- /opt/g4-new/include/Geant4/G4MTRunManager.hh \
- /opt/g4-new/include/Geant4/G4MTBarrier.hh \
- /opt/g4-new/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
- /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
- /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /opt/g4-new/include/Geant4/G4Profiler.hh \
- /opt/g4-new/include/Geant4/G4Profiler.icc /usr/include/c++/13/functional \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /opt/g4-new/include/Geant4/PTL/Globals.hh \
- /opt/g4-new/include/Geant4/PTL/Types.hh \
- /opt/g4-new/include/Geant4/PTL/Utility.hh /usr/include/c++/13/set \
+ /opt/g4-new/include/Geant4/G4RunManager.hh \
+ /opt/g4-new/include/Geant4/G4Event.hh /usr/include/c++/13/set \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h \
- /opt/g4-new/include/Geant4/G4RNGHelper.hh /usr/include/c++/13/queue \
- /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
- /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_queue.h \
- /opt/g4-new/include/Geant4/G4RunManager.hh \
- /opt/g4-new/include/Geant4/G4Event.hh \
  /opt/g4-new/include/Geant4/evtdefs.hh \
  /opt/g4-new/include/Geant4/G4Allocator.hh \
  /opt/g4-new/include/Geant4/G4AllocatorPool.hh \
@@ -295,6 +278,14 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4-new/include/Geant4/G4TrajectoryContainer.hh \
  /opt/g4-new/include/Geant4/G4VTrajectory.hh \
  /opt/g4-new/include/Geant4/G4VUserEventInformation.hh \
+ /opt/g4-new/include/Geant4/G4Profiler.hh \
+ /opt/g4-new/include/Geant4/G4Profiler.icc /usr/include/c++/13/functional \
+ /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /opt/g4-new/include/Geant4/PTL/Globals.hh \
+ /opt/g4-new/include/Geant4/PTL/Types.hh \
+ /opt/g4-new/include/Geant4/PTL/Utility.hh \
  /opt/g4-new/include/Geant4/G4EventManager.hh \
  /opt/g4-new/include/Geant4/G4StackManager.hh \
  /opt/g4-new/include/Geant4/G4UserStackingAction.hh \
@@ -313,6 +304,10 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /opt/g4-new/include/Geant4/G4GeomSplitter.hh \
  /opt/g4-new/include/Geant4/geomwdefs.hh \
  /opt/g4-new/include/Geant4/G4AutoLock.hh \
+ /opt/g4-new/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
+ /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
+ /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
  /opt/g4-new/include/Geant4/G4Region.icc \
  /opt/g4-new/include/Geant4/G4VPhysicalVolume.hh \
  /opt/g4-new/include/Geant4/geomdefs.hh \
@@ -544,7 +539,8 @@ CMakeFiles/exampleB4c.dir/exampleB4c.cc.o: \
  /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
  /usr/include/bits/signal_ext.h /usr/include/c++/13/regex \
  /usr/include/c++/13/bitset /usr/include/c++/13/stack \
- /usr/include/c++/13/bits/stl_stack.h \
+ /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
+ /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_stack.h \
  /usr/include/c++/13/bits/regex_constants.h \
  /usr/include/c++/13/bits/regex_error.h \
  /usr/include/c++/13/bits/regex_automaton.h \

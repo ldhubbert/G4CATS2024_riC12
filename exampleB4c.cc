@@ -1,29 +1,3 @@
-//
-// ********************************************************************
-// * License and Disclaimer                                           *
-// *                                                                  *
-// * The  Geant4 software  is  copyright of the Copyright Holders  of *
-// * the Geant4 Collaboration.  It is provided  under  the terms  and *
-// * conditions of the Geant4 Software License,  included in the file *
-// * LICENSE and available at  http://cern.ch/geant4/license .  These *
-// * include a list of copyright holders.                             *
-// *                                                                  *
-// * Neither the authors of this software system, nor their employing *
-// * institutes,nor the agencies providing financial support for this *
-// * work  make  any representation or  warranty, express or implied, *
-// * regarding  this  software system or assume any liability for its *
-// * use.  Please see the license in the file  LICENSE  and URL above *
-// * for the full disclaimer and the limitation of liability.         *
-// *                                                                  *
-// * This  code  implementation is the result of  the  scientific and *
-// * technical work of the GEANT4 collaboration.                      *
-// * By using,  copying,  modifying or  distributing the software (or *
-// * any work based  on the software)  you  agree  to acknowledge its *
-// * use  in  resulting  scientific  publications,  and indicate your *
-// * acceptance of all terms of the Geant4 Software license.          *
-// ********************************************************************
-//
-//
 /// \file exampleB4c.cc
 /// \brief Main program of the B4c example
 
@@ -32,11 +6,7 @@
 #include "B4PrimaryGeneratorAction.hh"
 #include "B4File.hh"
 
-#ifdef G4MULTITHREADED
-#include "G4MTRunManager.hh"
-#else
 #include "G4RunManager.hh"
-#endif
 
 #include "G4UImanager.hh"
 #include "G4UIcommand.hh"
@@ -62,25 +32,7 @@ int main(int argc,char** argv)
   
   G4String session;
 
-//I don't care about multi-threaded mode.
-//#ifdef G4MULTITHREADED
-//  G4int nThreads = 0;
-//#endif
-
-//I don't care about a random engine.
-  //Choose the Random engine
-//  G4Random::setTheEngine(new CLHEP::RanecuEngine);
-
-  //Construct the default run manager
-//#ifdef G4MULTITHREADED
-//  G4MTRunManager * runManager = new G4MTRunManager;
-//  if ( nThreads > 0)
-//  {
-//  runManager->SetNumberOfThreads(nThreads);
-//  }
-//#else
   G4RunManager * runManager = new G4RunManager;
-//#endif
 
   //Set manadatory initialization classes
   auto detConstruction = new B4cDetectorConstruction();
@@ -107,7 +59,6 @@ int main(int argc,char** argv)
   //However, I just want the loop to recognize the command, i.e., "-m", and don't care about what is written after that.
   //So, I will just go through the foor loop once.
   
-  //for ( G4int i=0; i<argc; i=i+1 )
   for (G4int i = 1; i < 2; i++)
   {
     if ( G4String(argv[i]) == "-m" )
@@ -123,26 +74,12 @@ int main(int argc,char** argv)
     hardcode = true;
     }
 
-//#ifdef G4MULTITHREADED
-//    else if ( G4String(argv[i]) == "-t" )
-//    {
-//    nThreads = G4UIcommand::ConvertToInt(argv[i+1]);
-//    }
-//#endif
-
   } 
 
-  //I don't know what the "-t" run option is, so I don't care
-  //"-u" option must have something to do with the GUI.... due to following ui definition? Look into this.
+  //"-u" option is to initiate the GUI!
+  //Session "G4UIXm" works as the string in the command line
 
-  //Detect interactive mode (if no macro provided or hardcoded not specified) and define UI session
-  G4UIExecutive* ui = 0;
-  if ( (! macro.size()) && ( ! hardcode)  )
-  {
-  ui = new G4UIExecutive(argc, argv, session);
-  }
-
-  //Detect hard-coded material without UI session
+  //Detect hard-coded material
   if ( hardcode )
   {
   runManager->Initialize();
@@ -156,19 +93,25 @@ int main(int argc,char** argv)
   G4String command = "/control/execute ";
   UImanager->ApplyCommand(command+macro);
   }
+
+  //if not hardcode or macro, maybe a UI session has been defined.
+  else if ( session.size() )
+  {
+
+  G4UIExecutive* ui = 0;
+  ui = new G4UIExecutive(argc, argv, session);
   
-  //If not hardcode or macro does not have a size (doesn't exist,) start UI session
-  else 
-  {  
-  //interactive mode: define UI session
-    UImanager->ApplyCommand("/control/execute init_vis.mac");
-    if (ui->IsGUI()) 
-    {
-    UImanager->ApplyCommand("/control/execute gui.mac");
-    }
+  UImanager->ApplyCommand("/control/execute init_vis.mac");
+  
+  //if (ui->IsGui())
+  //{UImanager->ApplyCommand("/control/execute gui.mac");}
+
   ui->SessionStart();
   delete ui;
+
   }
+
+  //There is no else statement, so if no hardcode, macro, or interactive modes have been specified, nothing would happen.
 
   // Job termination
   // Free the store: user actions, physics_list and detector_description are

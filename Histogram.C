@@ -4,7 +4,7 @@ void Histogram()
 	c1->Divide(1,1);
 	c1->cd(1);
 	
-	TString filename = "~/G4CATS2024_rootinput/build/RUN_RESULTS.root";
+	TString filename = "~/G4CATS2024_rootinput/RUN_RESULTS.root";
 	TFile *f = TFile::Open(filename);
 
 	//Cannot start at 0
@@ -23,8 +23,8 @@ void Histogram()
 	//1000*GeV = value in MeV	
 	while (r1.Next()) 
 	{
-		h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
-		//h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
+		//h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
+		h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
 	}
 	
 	h1->GetXaxis()->SetTitle("Energy (MeV)");
