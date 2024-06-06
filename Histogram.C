@@ -7,7 +7,8 @@ void Histogram()
 	TString filename = "~/G4CATS2024_rootinput/build/RUN_RESULTS.root";
 	TFile *f = TFile::Open(filename);
 
-	TH1F *h1 = new TH1F("Histogram Statistics", "", 300, 200, 350);
+	//Cannot start at 0
+	TH1F *h1 = new TH1F("Histogram Statistics", "", 1000, 1, 1000);
 
 	TTreeReader r1("B4", f);
 	TTreeReaderValue<Double_t> Ecore(r1, "Ecore");
@@ -23,6 +24,7 @@ void Histogram()
 	while (r1.Next()) 
 	{
 		h1->Fill((*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6)*(1000));
+		//h1->Fill(*Ecore + *Eann1 + *Eann2 + *Eann3 + *Eann4 + *Eann5 + *Eann6);
 	}
 	
 	h1->GetXaxis()->SetTitle("Energy (MeV)");

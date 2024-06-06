@@ -29,15 +29,6 @@ B4PrimaryGeneratorAction::B4PrimaryGeneratorAction()
   G4int nofParticles = 1;
   fParticleGun = new G4ParticleGun(nofParticles);
 
-  // default particle kinematic
-  //
- /* auto particleDefinition 
-    = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
-  fParticleGun->SetParticleDefinition(particleDefinition);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-  fParticleGun->SetParticleEnergy(500.*MeV);
-*/
-
 }
 
 B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
@@ -47,6 +38,7 @@ B4PrimaryGeneratorAction::~B4PrimaryGeneratorAction()
 
 void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
+
   // This function is called at the begining of event
 
   // In order to avoid dependence of PrimaryGeneratorAction
@@ -73,18 +65,19 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4Exception("B4PrimaryGeneratorAction::GeneratePrimaries()",
       "MyCode0002", JustWarning, msg);
   } 
- 
-  //Setting up pointers to point at input file and TNtuple.
-  //TFile *f = new TFile("~/EvGen/out/5cm/compton_c_300_in.root");
-  //TNtuple *n = (TNtuple*)f->Get("h1");
+  
+  if (hardcode)
+  {
+
+	  std::cout << "macro: " << macro << std::endl;
+	  std::cout << "hardcode: " << hardcode << std::endl;
 
   //Since this file is re-implemented for each event, we must know what number event we are on to properly direct it to the correct particle information.
   //Since it is a static variable, it is remembered (but the initial declaration counter = 0 is forgotten about after.)
   //This is used as a kind of for loop.
+
   static int counter = 0;
-
-  //Int_t number_of_events = n->GetEntries();
-
+  
   G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
   G4ParticleDefinition* particleDefinition = particleTable->FindParticle("gamma");
   fParticleGun->SetParticleDefinition(particleDefinition);
@@ -105,9 +98,11 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   y_position[counter] = n->GetArgs()[1];
   z_position[counter] = n->GetArgs()[2];
 
+  //std::cout << "x_position[counter]: " << x_position[counter] << std::endl;
+
   //G4ThreeVector position(0, 0, 0);
   G4ThreeVector position(x_position[counter], y_position[counter], z_position[counter]);
-  std::cout << "Particle Position: " << position << std::endl;
+  //std::cout << "Particle Position: " << position << std::endl;
   fParticleGun->SetParticlePosition(position);
 
   //Particle Momentum Direction
@@ -116,23 +111,22 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   momentum_in_z_direction[counter] = n->GetArgs()[10];
 
   G4ThreeVector momentum_direction(momentum_in_x_direction[counter], momentum_in_y_direction[counter], momentum_in_z_direction[counter]);
-  std::cout << "Particle Momentum Direction: " << momentum_direction << std::endl;
+  //std::cout << "Particle Momentum Direction: " << momentum_direction << std::endl;
   fParticleGun->SetParticleMomentumDirection(momentum_direction);
 
   //Particle Energy
   Float_t energy = n->GetArgs()[12];
-  std::cout << "Particle Energy: " << energy <<std::endl;
+  //std::cout << "Particle Energy: " << energy <<std::endl;
   fParticleGun->SetParticleEnergy(energy);
 
 
   //Produce an event!!
   fParticleGun->GeneratePrimaryVertex(anEvent);
 
-
   counter++;
-  std::cout << "static incremented: " << counter << std::endl;
+  //std::cout << "static incremented: " << counter << std::endl;
   
-  //Information about the TNtuple:
+  //Information about the TNtuple in normal EvGen:
 
   //Where, in our TNtuple, each row corresponds to an event, and each column represents a different variable
   //For Compton scattering off of C12, those columns are:
@@ -165,6 +159,17 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   //
   //Direction cosines need to be multiplied by the total momentum in order to get the momentum in that direction.
   //Direction cosines are numbers between -1 and 1.
+
+  }
+
+  else if (macro.size())
+  {
+  //need code to remember macro and hardcode values, like static int counter?
+  
+  //Generate an event
+  fParticleGun->GeneratePrimaryVertex(anEvent);
+
+  }
 
 }
 

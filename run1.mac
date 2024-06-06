@@ -21,10 +21,11 @@
 # 3 events
 #
 # Following three defined in src code PrimaryGeneratorAction class
-#/gun/particle gamma
-#/gun/direction 0 0 1
-#/gun/energy 500 MeV
-#/run/beamOn 100000
+/gun/particle gamma
+/gun/direction 0 0 1
+/gun/energy 500 MeV
+/gun/position 0 0 0 cm
+/run/beamOn 100000
 #
 # 20 events
 #
@@ -44,4 +45,4 @@
 #
 #/run/beamOn 20
 #
-/run/beamOn
+#/run/beamOn
