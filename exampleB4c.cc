@@ -60,12 +60,14 @@ int main(int argc,char** argv)
   
   //Setting up variables and initializations
   
-//  G4String session;
+  G4String session;
 
+//I don't care about multi-threaded mode.
 //#ifdef G4MULTITHREADED
 //  G4int nThreads = 0;
 //#endif
 
+//I don't care about a random engine.
   //Choose the Random engine
 //  G4Random::setTheEngine(new CLHEP::RanecuEngine);
 
@@ -91,8 +93,8 @@ int main(int argc,char** argv)
   runManager->SetUserInitialization(actionInitialization);
 
   //Initialize visualization
-//  auto visManager = new G4VisExecutive;
-//  visManager->Initialize();
+  auto visManager = new G4VisExecutive;
+  visManager->Initialize();
 
   //Get the pointer to the User Interface session
   auto UImanager = G4UImanager::GetUIpointer();
@@ -112,10 +114,10 @@ int main(int argc,char** argv)
     {
     macro = argv[i+1]; 
     }
-//    else if ( G4String(argv[i]) == "-u" )
-//    {
-//    session = argv[i+1];
-//    }
+    else if ( G4String(argv[i]) == "-u" )
+    {
+    session = argv[i+1];
+    }
     else if ( G4String(argv[i]) == "-h" )
     {
     hardcode = true;
@@ -130,12 +132,15 @@ int main(int argc,char** argv)
 
   } 
 
+  //I don't know what the "-t" run option is, so I don't care
+  //"-u" option must have something to do with the GUI.... due to following ui definition? Look into this.
+
   //Detect interactive mode (if no macro provided or hardcoded not specified) and define UI session
-//  G4UIExecutive* ui = 0;
-//  if ( (! macro.size()) && (hardcode != "true") )
-//  {
-//  ui = new G4UIExecutive(argc, argv, session);
-//  }
+  G4UIExecutive* ui = 0;
+  if ( (! macro.size()) && ( ! hardcode)  )
+  {
+  ui = new G4UIExecutive(argc, argv, session);
+  }
 
   //Detect hard-coded material without UI session
   if ( hardcode )
@@ -144,31 +149,33 @@ int main(int argc,char** argv)
   runManager->BeamOn(number_of_events);
   }
 
-  //If not hardcode, process macro or start UI session
+  //If not hardcode, process macro
   else if ( macro.size() )
   {
   //batch mode
   G4String command = "/control/execute ";
   UImanager->ApplyCommand(command+macro);
   }
-//  else 
-//  {  
+  
+  //If not hardcode or macro does not have a size (doesn't exist,) start UI session
+  else 
+  {  
   //interactive mode: define UI session
-//    UImanager->ApplyCommand("/control/execute init_vis.mac");
-//    if (ui->IsGUI()) 
-//    {
-//    UImanager->ApplyCommand("/control/execute gui.mac");
-//    }
-//  ui->SessionStart();
-//  delete ui;
-//  }
+    UImanager->ApplyCommand("/control/execute init_vis.mac");
+    if (ui->IsGUI()) 
+    {
+    UImanager->ApplyCommand("/control/execute gui.mac");
+    }
+  ui->SessionStart();
+  delete ui;
+  }
 
   // Job termination
   // Free the store: user actions, physics_list and detector_description are
   // owned and deleted by the run manager, so they should not be deleted 
   // in the main() program !
 
-//  delete visManager;
+  delete visManager;
   delete runManager;
 }
 

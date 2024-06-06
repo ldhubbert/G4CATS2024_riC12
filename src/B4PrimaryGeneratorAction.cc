@@ -69,9 +69,6 @@ void B4PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   if (hardcode)
   {
 
-	  std::cout << "macro: " << macro << std::endl;
-	  std::cout << "hardcode: " << hardcode << std::endl;
-
   //Since this file is re-implemented for each event, we must know what number event we are on to properly direct it to the correct particle information.
   //Since it is a static variable, it is remembered (but the initial declaration counter = 0 is forgotten about after.)
   //This is used as a kind of for loop.
