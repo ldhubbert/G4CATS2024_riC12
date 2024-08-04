@@ -42,8 +42,6 @@ B4cDetectorConstruction::~B4cDetectorConstruction()
 { 
 }  
 
-
-
 //The presence of the parantheses after "Construct" lets us know that "Construct" is a method.
 //It is a method that lives within the B4cDetectorConstruction class, and returns a pointer to G4VPhysicalVolume objects.
 G4VPhysicalVolume* B4cDetectorConstruction::Construct()
@@ -73,10 +71,9 @@ void B4cDetectorConstruction::DefineMaterials()
   nistManager->FindOrBuildMaterial("G4_AIR");
   nistManager->FindOrBuildMaterial("G4_LITHIUM_CARBONATE");
   nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+  nistManager->FindOrBuildMaterial("G4_C");
 
 }
-
-
 
 //Main construction of CATS starts here
 
@@ -94,6 +91,7 @@ G4VPhysicalVolume* B4cDetectorConstruction::DefineVolumes()
   auto coreMaterial = G4Material::GetMaterial("G4_SODIUM_IODIDE");
   auto ringMaterial = G4Material::GetMaterial("G4_LITHIUM_CARBONATE");
   auto scintMaterial = G4Material::GetMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+  auto targetmaterial = G4Material::GetMaterial("G4_C");
     
 
   //A solid in G4 represents the geometric shape of a volume. It defines the spatial extent of an object in the simulation.
@@ -155,6 +153,17 @@ G4VPhysicalVolume* B4cDetectorConstruction::DefineVolumes()
   new G4PVPlacement(0, pos1, logicCore, "Core", worldLV, false, 1, fCheckOverlaps);
 
   //End of CATS Core construction
+  
+
+  //Constructing the target now by Laura Hubbert
+  G4Box* target_box = new G4Box("Target", 10*cm, 10*cm, 10*cm);
+  G4LogicalVolume* target_box_LV = new G4LogicalVolume(target_box, targetmaterial, "Target");
+
+  G4ThreeVector target_position = G4ThreeVector(0,0,0);
+
+  new G4PVPlacement(0, target_position, target_box_LV, "Target", worldLV, false, 1, fCheckOverlaps);
+
+ 
   //Start of Segmented Annulus construction
   
   //An annulus is a ring-shaped object.
@@ -240,6 +249,12 @@ G4VPhysicalVolume* B4cDetectorConstruction::DefineVolumes()
   logicScint4->SetVisAttributes(CATScolour);
   logicScint5->SetVisAttributes(CATScolour);
   logicScint6->SetVisAttributes(CATScolour);
+
+  //Creating a colour for the target box
+  auto target_colour = new G4VisAttributes(G4Colour(1.0, 0.65, 0.0));
+  target_colour->SetVisibility(true);
+  target_box_LV->SetVisAttributes(target_colour);
+
 
 
   //Next, we make the collimator

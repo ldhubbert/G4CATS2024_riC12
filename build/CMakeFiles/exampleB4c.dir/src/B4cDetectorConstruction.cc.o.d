@@ -1,12 +1,11 @@
 CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
- /home/laura/G4CATS2024_rootinput/src/B4cDetectorConstruction.cc \
+ /home/laura/G4CATS2024_riC12/src/B4cDetectorConstruction.cc \
  /usr/include/stdc-predef.h \
- /home/laura/G4CATS2024_rootinput/include/B4cDetectorConstruction.hh \
- /opt/g4-new/include/Geant4/G4VUserDetectorConstruction.hh \
- /opt/g4-new/include/Geant4/globals.hh \
- /opt/g4-new/include/Geant4/G4ios.hh \
- /opt/g4-new/include/Geant4/G4Types.hh \
- /opt/g4-new/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
+ /home/laura/G4CATS2024_riC12/include/B4cDetectorConstruction.hh \
+ /opt/g4/include/Geant4/G4VUserDetectorConstruction.hh \
+ /opt/g4/include/Geant4/globals.hh /opt/g4/include/Geant4/G4ios.hh \
+ /opt/g4/include/Geant4/G4Types.hh \
+ /opt/g4/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
@@ -150,7 +149,7 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc /opt/g4-new/include/Geant4/tls.hh \
+ /usr/include/c++/13/bits/sstream.tcc /opt/g4/include/Geant4/tls.hh \
  /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -159,19 +158,19 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /opt/g4-new/include/Geant4/G4String.hh /usr/include/c++/13/cstring \
+ /opt/g4/include/Geant4/G4String.hh /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /opt/g4-new/include/Geant4/G4String.icc \
- /opt/g4-new/include/Geant4/templates.hh /usr/include/c++/13/climits \
+ /opt/g4/include/Geant4/G4String.icc /opt/g4/include/Geant4/templates.hh \
+ /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /opt/g4-new/include/Geant4/G4Exception.hh \
- /opt/g4-new/include/Geant4/G4ExceptionSeverity.hh \
- /opt/g4-new/include/Geant4/G4EnvironmentUtils.hh \
- /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
+ /usr/include/bits/uio_lim.h /opt/g4/include/Geant4/G4Exception.hh \
+ /opt/g4/include/Geant4/G4ExceptionSeverity.hh \
+ /opt/g4/include/Geant4/G4EnvironmentUtils.hh /usr/include/c++/13/iomanip \
+ /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/c++/13/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/messages_members.h \
@@ -195,43 +194,40 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /opt/g4-new/include/Geant4/globals.hh \
- /home/laura/G4CATS2024_rootinput/include/B4cCalorimeterSD.hh \
- /opt/g4-new/include/Geant4/G4VSensitiveDetector.hh \
- /opt/g4-new/include/Geant4/G4CollectionNameVector.hh \
- /opt/g4-new/include/Geant4/G4HCofThisEvent.hh \
- /opt/g4-new/include/Geant4/G4Allocator.hh \
- /opt/g4-new/include/Geant4/G4AllocatorPool.hh \
- /opt/g4-new/include/Geant4/G4VHitsCollection.hh \
- /opt/g4-new/include/Geant4/G4Step.hh \
- /opt/g4-new/include/Geant4/G4ThreeVector.hh \
- /opt/g4-new/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /opt/g4-new/include/Geant4/CLHEP/Utility/defs.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /opt/g4-new/include/Geant4/G4VPhysicalVolume.hh \
- /opt/g4-new/include/Geant4/geomdefs.hh \
- /opt/g4-new/include/Geant4/G4RotationMatrix.hh \
- /opt/g4-new/include/Geant4/CLHEP/Vector/Rotation.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/LorentzVector.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/LorentzVector.icc \
- /opt/g4-new/include/Geant4/CLHEP/Vector/AxisAngle.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/AxisAngle.icc \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationX.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationX.icc \
- /opt/g4-new/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /opt/g4-new/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationY.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationY.icc \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationZ.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/RotationZ.icc \
- /opt/g4-new/include/Geant4/CLHEP/Vector/Rotation.icc \
- /opt/g4-new/include/Geant4/G4GeomSplitter.hh \
- /opt/g4-new/include/Geant4/geomwdefs.hh \
- /opt/g4-new/include/Geant4/G4AutoLock.hh \
- /opt/g4-new/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
+ /usr/include/c++/13/bits/vector.tcc /opt/g4/include/Geant4/globals.hh \
+ /home/laura/G4CATS2024_riC12/include/B4cCalorimeterSD.hh \
+ /opt/g4/include/Geant4/G4VSensitiveDetector.hh \
+ /opt/g4/include/Geant4/G4CollectionNameVector.hh \
+ /opt/g4/include/Geant4/G4HCofThisEvent.hh \
+ /opt/g4/include/Geant4/G4Allocator.hh \
+ /opt/g4/include/Geant4/G4AllocatorPool.hh \
+ /opt/g4/include/Geant4/G4VHitsCollection.hh \
+ /opt/g4/include/Geant4/G4Step.hh /opt/g4/include/Geant4/G4ThreeVector.hh \
+ /opt/g4/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /opt/g4/include/Geant4/CLHEP/Utility/defs.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /opt/g4/include/Geant4/G4VPhysicalVolume.hh \
+ /opt/g4/include/Geant4/geomdefs.hh \
+ /opt/g4/include/Geant4/G4RotationMatrix.hh \
+ /opt/g4/include/Geant4/CLHEP/Vector/Rotation.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/LorentzVector.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+ /opt/g4/include/Geant4/CLHEP/Vector/AxisAngle.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationX.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationX.icc \
+ /opt/g4/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /opt/g4/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationY.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationY.icc \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationZ.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/RotationZ.icc \
+ /opt/g4/include/Geant4/CLHEP/Vector/Rotation.icc \
+ /opt/g4/include/Geant4/G4GeomSplitter.hh \
+ /opt/g4/include/Geant4/geomwdefs.hh /opt/g4/include/Geant4/G4AutoLock.hh \
+ /opt/g4/include/Geant4/G4Threading.hh /usr/include/c++/13/chrono \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -244,162 +240,148 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h \
- /opt/g4-new/include/Geant4/G4VPhysicalVolume.icc \
- /opt/g4-new/include/Geant4/G4StepPoint.hh \
- /opt/g4-new/include/Geant4/G4SteppingControl.hh \
- /opt/g4-new/include/Geant4/G4StepStatus.hh \
- /opt/g4-new/include/Geant4/G4TouchableHandle.hh \
- /opt/g4-new/include/Geant4/G4VTouchable.hh \
- /opt/g4-new/include/Geant4/G4TouchableHistory.hh \
- /opt/g4-new/include/Geant4/G4NavigationHistory.hh /usr/include/assert.h \
- /opt/g4-new/include/Geant4/G4AffineTransform.hh \
- /opt/g4-new/include/Geant4/G4Transform3D.hh \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/Point3D.h \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /opt/g4-new/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /opt/g4-new/include/Geant4/G4AffineTransform.icc \
- /opt/g4-new/include/Geant4/G4NavigationLevel.hh \
- /opt/g4-new/include/Geant4/G4NavigationLevelRep.hh \
- /opt/g4-new/include/Geant4/G4NavigationLevelRep.icc \
- /opt/g4-new/include/Geant4/G4NavigationLevel.icc \
- /opt/g4-new/include/Geant4/G4NavigationHistoryPool.hh \
- /opt/g4-new/include/Geant4/G4NavigationHistory.icc \
- /opt/g4-new/include/Geant4/G4LogicalVolume.hh /usr/include/c++/13/memory \
+ /opt/g4/include/Geant4/G4VPhysicalVolume.icc \
+ /opt/g4/include/Geant4/G4StepPoint.hh \
+ /opt/g4/include/Geant4/G4SteppingControl.hh \
+ /opt/g4/include/Geant4/G4StepStatus.hh \
+ /opt/g4/include/Geant4/G4TouchableHandle.hh \
+ /opt/g4/include/Geant4/G4VTouchable.hh \
+ /opt/g4/include/Geant4/G4TouchableHistory.hh \
+ /opt/g4/include/Geant4/G4NavigationHistory.hh /usr/include/assert.h \
+ /opt/g4/include/Geant4/G4AffineTransform.hh \
+ /opt/g4/include/Geant4/G4Transform3D.hh \
+ /opt/g4/include/Geant4/CLHEP/Geometry/Transform3D.h \
+ /opt/g4/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+ /opt/g4/include/Geant4/CLHEP/Geometry/Point3D.h \
+ /opt/g4/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+ /opt/g4/include/Geant4/CLHEP/Geometry/Vector3D.h \
+ /opt/g4/include/Geant4/CLHEP/Geometry/Normal3D.h \
+ /opt/g4/include/Geant4/G4AffineTransform.icc \
+ /opt/g4/include/Geant4/G4NavigationLevel.hh \
+ /opt/g4/include/Geant4/G4NavigationLevelRep.hh \
+ /opt/g4/include/Geant4/G4NavigationLevelRep.icc \
+ /opt/g4/include/Geant4/G4NavigationLevel.icc \
+ /opt/g4/include/Geant4/G4NavigationHistoryPool.hh \
+ /opt/g4/include/Geant4/G4NavigationHistory.icc \
+ /opt/g4/include/Geant4/G4LogicalVolume.hh /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /opt/g4-new/include/Geant4/G4Region.hh \
- /opt/g4-new/include/Geant4/G4Region.icc \
- /opt/g4-new/include/Geant4/G4LogicalVolume.icc \
- /opt/g4-new/include/Geant4/G4TouchableHistory.icc \
- /opt/g4-new/include/Geant4/G4ReferenceCountedHandle.hh \
- /opt/g4-new/include/Geant4/G4Material.hh \
- /opt/g4-new/include/Geant4/G4Element.hh \
- /opt/g4-new/include/Geant4/G4ElementTable.hh \
- /opt/g4-new/include/Geant4/G4ElementVector.hh \
- /opt/g4-new/include/Geant4/G4IonisParamElm.hh \
- /opt/g4-new/include/Geant4/G4Isotope.hh \
- /opt/g4-new/include/Geant4/G4IsotopeVector.hh \
- /opt/g4-new/include/Geant4/G4IonisParamMat.hh \
- /opt/g4-new/include/Geant4/G4DensityEffectCalculator.hh \
- /opt/g4-new/include/Geant4/G4MaterialPropertiesTable.hh \
- /opt/g4-new/include/Geant4/G4MaterialPropertiesIndex.hh \
- /opt/g4-new/include/Geant4/G4MaterialPropertyVector.hh \
- /opt/g4-new/include/Geant4/G4PhysicsFreeVector.hh \
- /opt/g4-new/include/Geant4/G4PhysicsVector.hh \
- /usr/include/c++/13/fstream \
+ /opt/g4/include/Geant4/G4Region.hh /opt/g4/include/Geant4/G4Region.icc \
+ /opt/g4/include/Geant4/G4LogicalVolume.icc \
+ /opt/g4/include/Geant4/G4TouchableHistory.icc \
+ /opt/g4/include/Geant4/G4ReferenceCountedHandle.hh \
+ /opt/g4/include/Geant4/G4Material.hh /opt/g4/include/Geant4/G4Element.hh \
+ /opt/g4/include/Geant4/G4ElementTable.hh \
+ /opt/g4/include/Geant4/G4ElementVector.hh \
+ /opt/g4/include/Geant4/G4IonisParamElm.hh \
+ /opt/g4/include/Geant4/G4Isotope.hh \
+ /opt/g4/include/Geant4/G4IsotopeVector.hh \
+ /opt/g4/include/Geant4/G4IonisParamMat.hh \
+ /opt/g4/include/Geant4/G4DensityEffectCalculator.hh \
+ /opt/g4/include/Geant4/G4MaterialPropertiesTable.hh \
+ /opt/g4/include/Geant4/G4MaterialPropertiesIndex.hh \
+ /opt/g4/include/Geant4/G4MaterialPropertyVector.hh \
+ /opt/g4/include/Geant4/G4PhysicsFreeVector.hh \
+ /opt/g4/include/Geant4/G4PhysicsVector.hh /usr/include/c++/13/fstream \
  /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /opt/g4-new/include/Geant4/G4Log.hh \
- /opt/g4-new/include/Geant4/G4PhysicsVectorType.hh \
- /opt/g4-new/include/Geant4/G4PhysicsVector.icc \
- /opt/g4-new/include/Geant4/G4MaterialTable.hh \
- /opt/g4-new/include/Geant4/G4SandiaTable.hh \
- /opt/g4-new/include/Geant4/G4OrderedTable.hh \
- /opt/g4-new/include/Geant4/G4DataVector.hh \
- /opt/g4-new/include/Geant4/G4DataVector.icc \
- /opt/g4-new/include/Geant4/G4StepPoint.icc \
- /opt/g4-new/include/Geant4/G4TrackVector.hh \
- /opt/g4-new/include/Geant4/G4Profiler.hh \
- /opt/g4-new/include/Geant4/G4Profiler.icc /usr/include/c++/13/functional \
+ /usr/include/c++/13/bits/fstream.tcc /opt/g4/include/Geant4/G4Log.hh \
+ /opt/g4/include/Geant4/G4PhysicsVectorType.hh \
+ /opt/g4/include/Geant4/G4PhysicsVector.icc \
+ /opt/g4/include/Geant4/G4MaterialTable.hh \
+ /opt/g4/include/Geant4/G4SandiaTable.hh \
+ /opt/g4/include/Geant4/G4OrderedTable.hh \
+ /opt/g4/include/Geant4/G4DataVector.hh \
+ /opt/g4/include/Geant4/G4DataVector.icc \
+ /opt/g4/include/Geant4/G4StepPoint.icc \
+ /opt/g4/include/Geant4/G4TrackVector.hh \
+ /opt/g4/include/Geant4/G4Profiler.hh \
+ /opt/g4/include/Geant4/G4Profiler.icc /usr/include/c++/13/functional \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
- /opt/g4-new/include/Geant4/PTL/Globals.hh \
- /opt/g4-new/include/Geant4/PTL/Types.hh \
- /opt/g4-new/include/Geant4/PTL/Utility.hh /usr/include/c++/13/set \
+ /opt/g4/include/Geant4/PTL/Globals.hh \
+ /opt/g4/include/Geant4/PTL/Types.hh \
+ /opt/g4/include/Geant4/PTL/Utility.hh /usr/include/c++/13/set \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
- /opt/g4-new/include/Geant4/G4Step.icc \
- /opt/g4-new/include/Geant4/G4Track.hh \
- /opt/g4-new/include/Geant4/trkdefs.hh \
- /opt/g4-new/include/Geant4/G4DynamicParticle.hh \
- /opt/g4-new/include/Geant4/G4ElectronOccupancy.hh \
- /opt/g4-new/include/Geant4/pwdefs.hh \
- /opt/g4-new/include/Geant4/G4LorentzVector.hh \
- /opt/g4-new/include/Geant4/G4ParticleDefinition.hh \
- /opt/g4-new/include/Geant4/G4PDefManager.hh /usr/include/c++/13/stdlib.h \
- /opt/g4-new/include/Geant4/G4ParticleDefinition.icc \
- /opt/g4-new/include/Geant4/G4ParticleMomentum.hh \
- /opt/g4-new/include/Geant4/G4DynamicParticle.icc \
- /opt/g4-new/include/Geant4/G4TrackStatus.hh \
- /opt/g4-new/include/Geant4/G4VUserTrackInformation.hh \
- /opt/g4-new/include/Geant4/G4PhysicsModelCatalog.hh \
- /opt/g4-new/include/Geant4/G4Track.icc \
- /opt/g4-new/include/Geant4/G4VHit.hh \
- /opt/g4-new/include/Geant4/G4VReadOutGeometry.hh \
- /opt/g4-new/include/Geant4/G4SensitiveVolumeList.hh \
- /opt/g4-new/include/Geant4/G4VSDFilter.hh \
- /home/laura/G4CATS2024_rootinput/include/B4cCalorHit.hh \
- /opt/g4-new/include/Geant4/G4VHit.hh \
- /opt/g4-new/include/Geant4/G4THitsCollection.hh \
- /opt/g4-new/include/Geant4/G4Allocator.hh \
- /opt/g4-new/include/Geant4/G4ThreeVector.hh \
- /opt/g4-new/include/Geant4/G4Threading.hh \
- /opt/g4-new/include/Geant4/G4Material.hh \
- /opt/g4-new/include/Geant4/G4NistManager.hh \
- /opt/g4-new/include/Geant4/G4ICRU90StoppingData.hh \
- /opt/g4-new/include/Geant4/G4NistElementBuilder.hh \
- /opt/g4-new/include/Geant4/G4NistMaterialBuilder.hh \
- /opt/g4-new/include/Geant4/G4Pow.hh /opt/g4-new/include/Geant4/G4Exp.hh \
- /opt/g4-new/include/Geant4/G4Box.hh \
- /opt/g4-new/include/Geant4/G4GeomTypes.hh \
- /opt/g4-new/include/Geant4/G4GeomConfig.hh \
- /opt/g4-new/include/Geant4/G4CSGSolid.hh \
- /opt/g4-new/include/Geant4/G4VSolid.hh \
- /opt/g4-new/include/Geant4/G4VSolid.icc \
- /opt/g4-new/include/Geant4/G4Polyhedron.hh \
- /opt/g4-new/include/Geant4/HepPolyhedron.h \
- /opt/g4-new/include/Geant4/G4TwoVector.hh \
- /opt/g4-new/include/Geant4/CLHEP/Vector/TwoVector.h \
- /opt/g4-new/include/Geant4/CLHEP/Vector/TwoVector.icc \
- /opt/g4-new/include/Geant4/G4Point3D.hh \
- /opt/g4-new/include/Geant4/G4Normal3D.hh \
- /opt/g4-new/include/Geant4/G4Visible.hh \
- /opt/g4-new/include/Geant4/G4Visible.icc \
- /opt/g4-new/include/Geant4/G4Box.icc \
- /opt/g4-new/include/Geant4/G4Tubs.hh \
- /opt/g4-new/include/Geant4/G4Tubs.icc \
- /opt/g4-new/include/Geant4/G4Cons.hh \
- /opt/g4-new/include/Geant4/G4Cons.icc \
- /opt/g4-new/include/Geant4/G4RotationMatrix.hh \
- /opt/g4-new/include/Geant4/G4SubtractionSolid.hh \
- /opt/g4-new/include/Geant4/G4BooleanSolid.hh \
- /opt/g4-new/include/Geant4/G4DisplacedSolid.hh \
- /opt/g4-new/include/Geant4/G4VBooleanProcessor.hh \
- /opt/g4-new/include/Geant4/G4BooleanSolid.icc \
- /opt/g4-new/include/Geant4/G4MultiUnion.hh \
- /opt/g4-new/include/Geant4/G4Vector3D.hh \
- /opt/g4-new/include/Geant4/G4SurfBits.hh \
- /opt/g4-new/include/Geant4/G4Voxelizer.hh \
- /opt/g4-new/include/Geant4/G4Box.hh \
- /opt/g4-new/include/Geant4/G4VFacet.hh \
- /opt/g4-new/include/Geant4/windefs.hh \
- /opt/g4-new/include/Geant4/G4Voxelizer.icc \
- /opt/g4-new/include/Geant4/G4LogicalVolume.hh \
- /opt/g4-new/include/Geant4/G4PVPlacement.hh \
- /opt/g4-new/include/Geant4/G4PVReplica.hh \
- /opt/g4-new/include/Geant4/G4GlobalMagFieldMessenger.hh \
- /opt/g4-new/include/Geant4/G4UImessenger.hh \
- /opt/g4-new/include/Geant4/G4UIdirectory.hh \
- /opt/g4-new/include/Geant4/G4UIcommand.hh \
- /opt/g4-new/include/Geant4/G4ApplicationState.hh \
- /opt/g4-new/include/Geant4/G4UIparameter.hh \
- /opt/g4-new/include/Geant4/G4UItokenNum.hh \
- /opt/g4-new/include/Geant4/G4AutoDelete.hh \
- /opt/g4-new/include/Geant4/G4ThreadLocalSingleton.hh \
- /opt/g4-new/include/Geant4/G4Cache.hh \
- /opt/g4-new/include/Geant4/G4CacheDetails.hh \
- /opt/g4-new/include/Geant4/G4Backtrace.hh /usr/include/c++/13/cxxabi.h \
+ /usr/include/c++/13/bits/stl_relops.h /opt/g4/include/Geant4/G4Step.icc \
+ /opt/g4/include/Geant4/G4Track.hh /opt/g4/include/Geant4/trkdefs.hh \
+ /opt/g4/include/Geant4/G4DynamicParticle.hh \
+ /opt/g4/include/Geant4/G4ElectronOccupancy.hh \
+ /opt/g4/include/Geant4/pwdefs.hh \
+ /opt/g4/include/Geant4/G4LorentzVector.hh \
+ /opt/g4/include/Geant4/G4ParticleDefinition.hh \
+ /opt/g4/include/Geant4/G4PDefManager.hh /usr/include/c++/13/stdlib.h \
+ /opt/g4/include/Geant4/G4ParticleDefinition.icc \
+ /opt/g4/include/Geant4/G4ParticleMomentum.hh \
+ /opt/g4/include/Geant4/G4DynamicParticle.icc \
+ /opt/g4/include/Geant4/G4TrackStatus.hh \
+ /opt/g4/include/Geant4/G4VUserTrackInformation.hh \
+ /opt/g4/include/Geant4/G4PhysicsModelCatalog.hh \
+ /opt/g4/include/Geant4/G4Track.icc /opt/g4/include/Geant4/G4VHit.hh \
+ /opt/g4/include/Geant4/G4VReadOutGeometry.hh \
+ /opt/g4/include/Geant4/G4SensitiveVolumeList.hh \
+ /opt/g4/include/Geant4/G4VSDFilter.hh \
+ /home/laura/G4CATS2024_riC12/include/B4cCalorHit.hh \
+ /opt/g4/include/Geant4/G4VHit.hh \
+ /opt/g4/include/Geant4/G4THitsCollection.hh \
+ /opt/g4/include/Geant4/G4Allocator.hh \
+ /opt/g4/include/Geant4/G4ThreeVector.hh \
+ /opt/g4/include/Geant4/G4Threading.hh \
+ /opt/g4/include/Geant4/G4Material.hh \
+ /opt/g4/include/Geant4/G4NistManager.hh \
+ /opt/g4/include/Geant4/G4ICRU90StoppingData.hh \
+ /opt/g4/include/Geant4/G4NistElementBuilder.hh \
+ /opt/g4/include/Geant4/G4NistMaterialBuilder.hh \
+ /opt/g4/include/Geant4/G4Pow.hh /opt/g4/include/Geant4/G4Exp.hh \
+ /opt/g4/include/Geant4/G4Box.hh /opt/g4/include/Geant4/G4GeomTypes.hh \
+ /opt/g4/include/Geant4/G4GeomConfig.hh \
+ /opt/g4/include/Geant4/G4CSGSolid.hh /opt/g4/include/Geant4/G4VSolid.hh \
+ /opt/g4/include/Geant4/G4VSolid.icc \
+ /opt/g4/include/Geant4/G4Polyhedron.hh \
+ /opt/g4/include/Geant4/HepPolyhedron.h \
+ /opt/g4/include/Geant4/G4TwoVector.hh \
+ /opt/g4/include/Geant4/CLHEP/Vector/TwoVector.h \
+ /opt/g4/include/Geant4/CLHEP/Vector/TwoVector.icc \
+ /opt/g4/include/Geant4/G4Point3D.hh /opt/g4/include/Geant4/G4Normal3D.hh \
+ /opt/g4/include/Geant4/G4Visible.hh /opt/g4/include/Geant4/G4Visible.icc \
+ /opt/g4/include/Geant4/G4Box.icc /opt/g4/include/Geant4/G4Tubs.hh \
+ /opt/g4/include/Geant4/G4Tubs.icc /opt/g4/include/Geant4/G4Cons.hh \
+ /opt/g4/include/Geant4/G4Cons.icc \
+ /opt/g4/include/Geant4/G4RotationMatrix.hh \
+ /opt/g4/include/Geant4/G4SubtractionSolid.hh \
+ /opt/g4/include/Geant4/G4BooleanSolid.hh \
+ /opt/g4/include/Geant4/G4DisplacedSolid.hh \
+ /opt/g4/include/Geant4/G4VBooleanProcessor.hh \
+ /opt/g4/include/Geant4/G4BooleanSolid.icc \
+ /opt/g4/include/Geant4/G4MultiUnion.hh \
+ /opt/g4/include/Geant4/G4Vector3D.hh \
+ /opt/g4/include/Geant4/G4SurfBits.hh \
+ /opt/g4/include/Geant4/G4Voxelizer.hh /opt/g4/include/Geant4/G4Box.hh \
+ /opt/g4/include/Geant4/G4VFacet.hh /opt/g4/include/Geant4/windefs.hh \
+ /opt/g4/include/Geant4/G4Voxelizer.icc \
+ /opt/g4/include/Geant4/G4LogicalVolume.hh \
+ /opt/g4/include/Geant4/G4PVPlacement.hh \
+ /opt/g4/include/Geant4/G4PVReplica.hh \
+ /opt/g4/include/Geant4/G4GlobalMagFieldMessenger.hh \
+ /opt/g4/include/Geant4/G4UImessenger.hh \
+ /opt/g4/include/Geant4/G4UIdirectory.hh \
+ /opt/g4/include/Geant4/G4UIcommand.hh \
+ /opt/g4/include/Geant4/G4ApplicationState.hh \
+ /opt/g4/include/Geant4/G4UIparameter.hh \
+ /opt/g4/include/Geant4/G4UItokenNum.hh \
+ /opt/g4/include/Geant4/G4AutoDelete.hh \
+ /opt/g4/include/Geant4/G4ThreadLocalSingleton.hh \
+ /opt/g4/include/Geant4/G4Cache.hh \
+ /opt/g4/include/Geant4/G4CacheDetails.hh \
+ /opt/g4/include/Geant4/G4Backtrace.hh /usr/include/c++/13/cxxabi.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/cxxabi_tweaks.h \
  /usr/include/execinfo.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
@@ -435,15 +417,14 @@ CMakeFiles/exampleB4c.dir/src/B4cDetectorConstruction.cc.o: \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc /usr/include/c++/13/list \
  /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
- /opt/g4-new/include/Geant4/G4SDManager.hh \
- /opt/g4-new/include/Geant4/G4HCtable.hh \
- /opt/g4-new/include/Geant4/G4SDStructure.hh \
- /opt/g4-new/include/Geant4/G4VSensitiveDetector.hh \
- /opt/g4-new/include/Geant4/G4VisAttributes.hh \
- /opt/g4-new/include/Geant4/graphics_reps_defs.hh \
- /opt/g4-new/include/Geant4/G4Colour.hh \
- /opt/g4-new/include/Geant4/G4Color.hh \
- /opt/g4-new/include/Geant4/G4VisAttributes.icc \
- /opt/g4-new/include/Geant4/G4Colour.hh \
- /opt/g4-new/include/Geant4/G4PhysicalConstants.hh \
- /opt/g4-new/include/Geant4/G4SystemOfUnits.hh
+ /opt/g4/include/Geant4/G4SDManager.hh \
+ /opt/g4/include/Geant4/G4HCtable.hh \
+ /opt/g4/include/Geant4/G4SDStructure.hh \
+ /opt/g4/include/Geant4/G4VSensitiveDetector.hh \
+ /opt/g4/include/Geant4/G4VisAttributes.hh \
+ /opt/g4/include/Geant4/graphics_reps_defs.hh \
+ /opt/g4/include/Geant4/G4Colour.hh /opt/g4/include/Geant4/G4Color.hh \
+ /opt/g4/include/Geant4/G4VisAttributes.icc \
+ /opt/g4/include/Geant4/G4Colour.hh \
+ /opt/g4/include/Geant4/G4PhysicalConstants.hh \
+ /opt/g4/include/Geant4/G4SystemOfUnits.hh

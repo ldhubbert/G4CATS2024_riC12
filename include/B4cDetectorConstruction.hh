@@ -81,7 +81,5 @@ class B4cDetectorConstruction : public G4VUserDetectorConstruction
     G4int   fNofLayers;     // number of layers
 };
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
 #endif
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib64/ccache/c++
 CXX_DEFINES = -DG4LIB_BUILD_DLL -DG4VIS_USE_OPENGLX -DG4VIS_USE_TOOLSSG_X11_GLES -DPTL_BUILD_DLL
 
-CXX_INCLUDES = -I/home/laura/G4CATS2024_rootinput/include -I/opt/root/include -isystem /opt/g4-new/include/Geant4
+CXX_INCLUDES = -I/home/laura/G4CATS2024_riC12/include -I/opt/root/include -isystem /opt/g4/include/Geant4
 
 CXX_FLAGS = 
 
